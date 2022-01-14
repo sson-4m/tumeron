@@ -7,15 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D03C764262EC573000A9470 /* TimeAttackPopOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D03C763262EC573000A9470 /* TimeAttackPopOverViewController.swift */; };
+		8D0CB9FD27685AD200F55401 /* hit-explanation.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8D0CB9FC27685AD200F55401 /* hit-explanation.mp4 */; };
 		8D2EA52F262C4DF100A9A665 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2EA52E262C4DF100A9A665 /* AppDelegate.swift */; };
 		8D2EA531262C4DF100A9A665 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2EA530262C4DF100A9A665 /* SceneDelegate.swift */; };
 		8D2EA533262C4DF100A9A665 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2EA532262C4DF100A9A665 /* ViewController.swift */; };
 		8D2EA536262C4DF100A9A665 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D2EA534262C4DF100A9A665 /* Main.storyboard */; };
 		8D2EA538262C4DF200A9A665 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D2EA537262C4DF200A9A665 /* Assets.xcassets */; };
 		8D2EA53B262C4DF200A9A665 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D2EA539262C4DF200A9A665 /* LaunchScreen.storyboard */; };
+		8D327112263ACA7A00E3F3C8 /* BattleVer1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D327111263ACA7A00E3F3C8 /* BattleVer1ViewController.swift */; };
+		8D402902264288060067D0FD /* BattleVer2ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D402901264288060067D0FD /* BattleVer2ResultViewController.swift */; };
+		8D4D0552278B83A0009A1144 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4D0551278B83A0009A1144 /* SplashViewController.swift */; };
+		8D58212B262C61BE00FBE8C9 /* TimeAttackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D58212A262C61BE00FBE8C9 /* TimeAttackViewController.swift */; };
+		8D5E769D275607E40001F5DF /* hit1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8D5E769B275607E30001F5DF /* hit1.mp3 */; };
+		8D5E769E275607E40001F5DF /* hit-title.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8D5E769C275607E40001F5DF /* hit-title.mp3 */; };
+		8D5E76A1275608880001F5DF /* clear.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8D5E769F275608870001F5DF /* clear.mp3 */; };
+		8D5E76A2275608880001F5DF /* fail.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8D5E76A0275608880001F5DF /* fail.mp3 */; };
+		8D65C4EA2638669C00EB5F21 /* QuestionMarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D65C4E92638669C00EB5F21 /* QuestionMarkViewController.swift */; };
+		8D933EF62632989D00EC3788 /* GameTumeronResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D933EF52632989D00EC3788 /* GameTumeronResultViewController.swift */; };
+		8DAB2E4C26BA148A00E204EE /* tumeron-title.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8DAB2E4B26BA148A00E204EE /* tumeron-title.mp4 */; };
+		8DD99A46262F2EAF00F072B3 /* TumeronLv1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD99A45262F2EAF00F072B3 /* TumeronLv1ViewController.swift */; };
+		8DE3BC07263C2E5E003FF69E /* BattleVer1ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE3BC06263C2E5E003FF69E /* BattleVer1ResultViewController.swift */; };
+		8DEA46C626419F9600B69624 /* BattleVer2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEA46C526419F9600B69624 /* BattleVer2ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8D03C763262EC573000A9470 /* TimeAttackPopOverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeAttackPopOverViewController.swift; sourceTree = "<group>"; };
+		8D0CB9FC27685AD200F55401 /* hit-explanation.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "hit-explanation.mp4"; sourceTree = "<group>"; };
 		8D2EA52B262C4DF100A9A665 /* Tumeron.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tumeron.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D2EA52E262C4DF100A9A665 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8D2EA530262C4DF100A9A665 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +42,20 @@
 		8D2EA537262C4DF200A9A665 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D2EA53A262C4DF200A9A665 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D2EA53C262C4DF200A9A665 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D327111263ACA7A00E3F3C8 /* BattleVer1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleVer1ViewController.swift; sourceTree = "<group>"; };
+		8D402901264288060067D0FD /* BattleVer2ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleVer2ResultViewController.swift; sourceTree = "<group>"; };
+		8D4D0551278B83A0009A1144 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		8D58212A262C61BE00FBE8C9 /* TimeAttackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeAttackViewController.swift; sourceTree = "<group>"; };
+		8D5E769B275607E30001F5DF /* hit1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = hit1.mp3; sourceTree = "<group>"; };
+		8D5E769C275607E40001F5DF /* hit-title.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "hit-title.mp3"; sourceTree = "<group>"; };
+		8D5E769F275608870001F5DF /* clear.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = clear.mp3; sourceTree = "<group>"; };
+		8D5E76A0275608880001F5DF /* fail.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fail.mp3; sourceTree = "<group>"; };
+		8D65C4E92638669C00EB5F21 /* QuestionMarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionMarkViewController.swift; sourceTree = "<group>"; };
+		8D933EF52632989D00EC3788 /* GameTumeronResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTumeronResultViewController.swift; sourceTree = "<group>"; };
+		8DAB2E4B26BA148A00E204EE /* tumeron-title.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "tumeron-title.mp4"; sourceTree = "<group>"; };
+		8DD99A45262F2EAF00F072B3 /* TumeronLv1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TumeronLv1ViewController.swift; sourceTree = "<group>"; };
+		8DE3BC06263C2E5E003FF69E /* BattleVer1ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleVer1ResultViewController.swift; sourceTree = "<group>"; };
+		8DEA46C526419F9600B69624 /* BattleVer2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleVer2ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +90,27 @@
 			children = (
 				8D2EA52E262C4DF100A9A665 /* AppDelegate.swift */,
 				8D2EA530262C4DF100A9A665 /* SceneDelegate.swift */,
-				8D2EA532262C4DF100A9A665 /* ViewController.swift */,
+				8D4D0551278B83A0009A1144 /* SplashViewController.swift */,
 				8D2EA534262C4DF100A9A665 /* Main.storyboard */,
+				8D2EA532262C4DF100A9A665 /* ViewController.swift */,
+				8D65C4E92638669C00EB5F21 /* QuestionMarkViewController.swift */,
+				8DD99A45262F2EAF00F072B3 /* TumeronLv1ViewController.swift */,
+				8D933EF52632989D00EC3788 /* GameTumeronResultViewController.swift */,
+				8D327111263ACA7A00E3F3C8 /* BattleVer1ViewController.swift */,
+				8DEA46C526419F9600B69624 /* BattleVer2ViewController.swift */,
+				8DE3BC06263C2E5E003FF69E /* BattleVer1ResultViewController.swift */,
+				8D402901264288060067D0FD /* BattleVer2ResultViewController.swift */,
+				8D58212A262C61BE00FBE8C9 /* TimeAttackViewController.swift */,
+				8D03C763262EC573000A9470 /* TimeAttackPopOverViewController.swift */,
 				8D2EA537262C4DF200A9A665 /* Assets.xcassets */,
+				8D5E769F275608870001F5DF /* clear.mp3 */,
+				8D5E76A0275608880001F5DF /* fail.mp3 */,
+				8D5E769C275607E40001F5DF /* hit-title.mp3 */,
+				8D5E769B275607E30001F5DF /* hit1.mp3 */,
 				8D2EA539262C4DF200A9A665 /* LaunchScreen.storyboard */,
 				8D2EA53C262C4DF200A9A665 /* Info.plist */,
+				8D0CB9FC27685AD200F55401 /* hit-explanation.mp4 */,
+				8DAB2E4B26BA148A00E204EE /* tumeron-title.mp4 */,
 			);
 			path = Tumeron;
 			sourceTree = "<group>";
@@ -125,7 +173,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D2EA53B262C4DF200A9A665 /* LaunchScreen.storyboard in Resources */,
+				8D5E76A2275608880001F5DF /* fail.mp3 in Resources */,
+				8D5E769E275607E40001F5DF /* hit-title.mp3 in Resources */,
+				8D5E769D275607E40001F5DF /* hit1.mp3 in Resources */,
 				8D2EA538262C4DF200A9A665 /* Assets.xcassets in Resources */,
+				8DAB2E4C26BA148A00E204EE /* tumeron-title.mp4 in Resources */,
+				8D5E76A1275608880001F5DF /* clear.mp3 in Resources */,
+				8D0CB9FD27685AD200F55401 /* hit-explanation.mp4 in Resources */,
 				8D2EA536262C4DF100A9A665 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,9 +191,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D327112263ACA7A00E3F3C8 /* BattleVer1ViewController.swift in Sources */,
+				8DEA46C626419F9600B69624 /* BattleVer2ViewController.swift in Sources */,
+				8D933EF62632989D00EC3788 /* GameTumeronResultViewController.swift in Sources */,
+				8D03C764262EC573000A9470 /* TimeAttackPopOverViewController.swift in Sources */,
+				8D402902264288060067D0FD /* BattleVer2ResultViewController.swift in Sources */,
+				8D65C4EA2638669C00EB5F21 /* QuestionMarkViewController.swift in Sources */,
+				8D4D0552278B83A0009A1144 /* SplashViewController.swift in Sources */,
 				8D2EA533262C4DF100A9A665 /* ViewController.swift in Sources */,
 				8D2EA52F262C4DF100A9A665 /* AppDelegate.swift in Sources */,
+				8DD99A46262F2EAF00F072B3 /* TumeronLv1ViewController.swift in Sources */,
+				8DE3BC07263C2E5E003FF69E /* BattleVer1ResultViewController.swift in Sources */,
 				8D2EA531262C4DF100A9A665 /* SceneDelegate.swift in Sources */,
+				8D58212B262C61BE00FBE8C9 /* TimeAttackViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,6 +233,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -216,7 +281,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -230,6 +295,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -271,7 +337,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -287,16 +353,19 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.2;
 				DEVELOPMENT_TEAM = 9KT9YTCNC5;
 				INFOPLIST_FILE = Tumeron/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hironori.Tumeron;
+				MARKETING_VERSION = 1.0.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sson.Tumeron202122Apr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -306,16 +375,19 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.2;
 				DEVELOPMENT_TEAM = 9KT9YTCNC5;
 				INFOPLIST_FILE = Tumeron/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hironori.Tumeron;
+				MARKETING_VERSION = 1.0.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sson.Tumeron202122Apr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

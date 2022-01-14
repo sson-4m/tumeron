@@ -1,0 +1,390 @@
+
+/* Class = "UIButton"; normalTitle = "?"; ObjectID = "0dK-XO-c7m"; */
+"0dK-XO-c7m.normalTitle" = "?";
+
+/* Class = "UIButton"; normalTitle = "レベル２"; ObjectID = "0iu-WH-exg"; */
+"0iu-WH-exg.normalTitle" = "レベル２";
+
+/* Class = "UIButton"; normalTitle = "リプレイ"; ObjectID = "1jj-f7-Zgx"; */
+"1jj-f7-Zgx.normalTitle" = "リプレイ";
+
+/* Class = "UIButton"; configuration.title = "はい"; ObjectID = "394-dB-Ckf"; */
+"394-dB-Ckf.configuration.title" = "はい";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "394-dB-Ckf"; */
+"394-dB-Ckf.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "７"; ObjectID = "3dZ-JB-7sq"; */
+"3dZ-JB-7sq.normalTitle" = "７";
+
+/* Class = "UILabel"; text = "スタートを押して下さい"; ObjectID = "50O-PR-GV2"; */
+"50O-PR-GV2.text" = "スタートを押して下さい";
+
+/* Class = "UIButton"; normalTitle = "スタート"; ObjectID = "57g-Oz-csk"; */
+"57g-Oz-csk.normalTitle" = "スタート";
+
+/* Class = "UIButton"; normalTitle = "８"; ObjectID = "5Sc-uR-IMo"; */
+"5Sc-uR-IMo.normalTitle" = "８";
+
+/* Class = "UIButton"; normalTitle = "レベル１"; ObjectID = "6AH-lj-Qve"; */
+"6AH-lj-Qve.normalTitle" = "レベル１";
+
+/* Class = "UIButton"; normalTitle = "リセット"; ObjectID = "6QO-zt-bbB"; */
+"6QO-zt-bbB.normalTitle" = "リセット";
+
+/* Class = "UIButton"; normalTitle = "１"; ObjectID = "6mn-Xn-Lz3"; */
+"6mn-Xn-Lz3.normalTitle" = "１";
+
+/* Class = "UIButton"; normalTitle = "４"; ObjectID = "7EY-gW-udQ"; */
+"7EY-gW-udQ.normalTitle" = "４";
+
+/* Class = "UILabel"; text = "1Pの勝ち"; ObjectID = "7F5-cG-WTC"; */
+"7F5-cG-WTC.text" = "1Pの勝ち";
+
+/* Class = "UILabel"; text = "00:"; ObjectID = "7uu-a3-TJR"; */
+"7uu-a3-TJR.text" = "00:";
+
+/* Class = "UIButton"; normalTitle = "リプレイ"; ObjectID = "8Ga-P9-Ec1"; */
+"8Ga-P9-Ec1.normalTitle" = "リプレイ";
+
+/* Class = "UILabel"; text = "１P"; ObjectID = "8ai-nc-Mlu"; */
+"8ai-nc-Mlu.text" = "１P";
+
+/* Class = "UILabel"; text = "スタートを押して下さい"; ObjectID = "8ed-8e-dY2"; */
+"8ed-8e-dY2.text" = "スタートを押して下さい";
+
+/* Class = "UILabel"; text = "00"; ObjectID = "91e-R7-ftz"; */
+"91e-R7-ftz.text" = "00";
+
+/* Class = "UIButton"; normalTitle = "Ver2"; ObjectID = "9HY-1P-mqS"; */
+"9HY-1P-mqS.normalTitle" = "Ver2";
+
+/* Class = "UILabel"; text = "クリア！"; ObjectID = "9L4-g2-BA8"; */
+"9L4-g2-BA8.text" = "クリア！";
+
+/* Class = "UIButton"; normalTitle = "「SSON」の活動紹介"; ObjectID = "ABn-xC-rEO"; */
+"ABn-xC-rEO.normalTitle" = "「SSON」の活動紹介";
+
+/* Class = "UIButton"; normalTitle = "２"; ObjectID = "AVB-CO-Y4I"; */
+"AVB-CO-Y4I.normalTitle" = "２";
+
+/* Class = "UIButton"; normalTitle = "３"; ObjectID = "AdB-xl-ABY"; */
+"AdB-xl-ABY.normalTitle" = "３";
+
+/* Class = "UIButton"; normalTitle = "５"; ObjectID = "AfZ-Yf-kbi"; */
+"AfZ-Yf-kbi.normalTitle" = "５";
+
+/* Class = "UIButton"; configuration.title = "はい"; ObjectID = "Aic-6b-gIo"; */
+"Aic-6b-gIo.configuration.title" = "はい";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Aic-6b-gIo"; */
+"Aic-6b-gIo.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "メニューに戻りますか？"; ObjectID = "Arh-Ph-xWJ"; */
+"Arh-Ph-xWJ.text" = "メニューに戻りますか？";
+
+/* Class = "UIButton"; normalTitle = "レベル３"; ObjectID = "BUQ-Ap-0ae"; */
+"BUQ-Ap-0ae.normalTitle" = "レベル３";
+
+/* Class = "UIButton"; normalTitle = "７"; ObjectID = "BdT-RA-CsC"; */
+"BdT-RA-CsC.normalTitle" = "７";
+
+/* Class = "UILabel"; text = "リセットしますか？"; ObjectID = "BgJ-rf-zaA"; */
+"BgJ-rf-zaA.text" = "リセットしますか？";
+
+/* Class = "UIButton"; normalTitle = "リセット"; ObjectID = "Bnf-gj-pNT"; */
+"Bnf-gj-pNT.normalTitle" = "リセット";
+
+/* Class = "UIButton"; normalTitle = "スタート"; ObjectID = "CT4-cS-F3r"; */
+"CT4-cS-F3r.normalTitle" = "スタート";
+
+/* Class = "UIButton"; normalTitle = "OK"; ObjectID = "CyB-XR-9Ga"; */
+"CyB-XR-9Ga.normalTitle" = "OK";
+
+/* Class = "UILabel"; text = "リセットしますか？"; ObjectID = "Dgz-wW-jz5"; */
+"Dgz-wW-jz5.text" = "リセットしますか？";
+
+/* Class = "UIButton"; normalTitle = "９"; ObjectID = "DuO-8x-bvj"; */
+"DuO-8x-bvj.normalTitle" = "９";
+
+/* Class = "UIButton"; normalTitle = "スタート"; ObjectID = "E2F-O9-1e3"; */
+"E2F-O9-1e3.normalTitle" = "スタート";
+
+/* Class = "UIButton"; normalTitle = "OK"; ObjectID = "E6c-Rp-1ce"; */
+"E6c-Rp-1ce.normalTitle" = "OK";
+
+/* Class = "UIButton"; configuration.title = "いいえ"; ObjectID = "F5H-0e-LpX"; */
+"F5H-0e-LpX.configuration.title" = "いいえ";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "F5H-0e-LpX"; */
+"F5H-0e-LpX.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "閉じる"; ObjectID = "GVN-zF-igD"; */
+"GVN-zF-igD.normalTitle" = "閉じる";
+
+/* Class = "UIButton"; normalTitle = "×"; ObjectID = "GVn-HQ-fJa"; */
+"GVn-HQ-fJa.normalTitle" = "×";
+
+/* Class = "UIButton"; normalTitle = "５"; ObjectID = "Gjf-cq-KpE"; */
+"Gjf-cq-KpE.normalTitle" = "５";
+
+/* Class = "UILabel"; text = "□□□□ "; ObjectID = "H0r-o3-6QJ"; */
+"H0r-o3-6QJ.text" = "□□□□ ";
+
+/* Class = "UIButton"; configuration.title = "はい"; ObjectID = "HWj-2T-LkC"; */
+"HWj-2T-LkC.configuration.title" = "はい";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "HWj-2T-LkC"; */
+"HWj-2T-LkC.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "リセット"; ObjectID = "I8d-Rg-ZfI"; */
+"I8d-Rg-ZfI.normalTitle" = "リセット";
+
+/* Class = "UIButton"; normalTitle = "×"; ObjectID = "KFA-hg-wHq"; */
+"KFA-hg-wHq.normalTitle" = "×";
+
+/* Class = "UIButton"; normalTitle = "１"; ObjectID = "L3w-qv-Gux"; */
+"L3w-qv-Gux.normalTitle" = "１";
+
+/* Class = "UIButton"; configuration.title = "いいえ"; ObjectID = "L9L-eA-FHs"; */
+"L9L-eA-FHs.configuration.title" = "いいえ";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "L9L-eA-FHs"; */
+"L9L-eA-FHs.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Ver1"; ObjectID = "NVd-en-t6P"; */
+"NVd-en-t6P.normalTitle" = "Ver1";
+
+/* Class = "UIButton"; normalTitle = "１"; ObjectID = "Ncq-JJ-omI"; */
+"Ncq-JJ-omI.normalTitle" = "１";
+
+/* Class = "UIButton"; normalTitle = "６"; ObjectID = "O3J-nk-KM3"; */
+"O3J-nk-KM3.normalTitle" = "６";
+
+/* Class = "UIButton"; normalTitle = "６"; ObjectID = "OKK-WU-cgI"; */
+"OKK-WU-cgI.normalTitle" = "６";
+
+/* Class = "UIButton"; normalTitle = "メニューに戻る"; ObjectID = "PWT-yN-vyf"; */
+"PWT-yN-vyf.normalTitle" = "メニューに戻る";
+
+/* Class = "UILabel"; text = "2P"; ObjectID = "PbN-G3-M17"; */
+"PbN-G3-M17.text" = "2P";
+
+/* Class = "UIButton"; normalTitle = "４"; ObjectID = "Ppr-dj-vIa"; */
+"Ppr-dj-vIa.normalTitle" = "４";
+
+/* Class = "UIButton"; normalTitle = "メニューに戻る"; ObjectID = "Pvg-lr-iwM"; */
+"Pvg-lr-iwM.normalTitle" = "メニューに戻る";
+
+/* Class = "UIButton"; normalTitle = "OK"; ObjectID = "Q1F-KV-tuR"; */
+"Q1F-KV-tuR.normalTitle" = "OK";
+
+/* Class = "UIButton"; normalTitle = "６"; ObjectID = "RJW-Tm-u8G"; */
+"RJW-Tm-u8G.normalTitle" = "６";
+
+/* Class = "UILabel"; text = "スタートを押して下さい"; ObjectID = "RKM-4t-UiH"; */
+"RKM-4t-UiH.text" = "スタートを押して下さい";
+
+/* Class = "UIButton"; normalTitle = "メニューに戻る"; ObjectID = "S1o-W1-TA5"; */
+"S1o-W1-TA5.normalTitle" = "メニューに戻る";
+
+/* Class = "UIButton"; normalTitle = "メニューに戻る"; ObjectID = "SCU-J4-RDz"; */
+"SCU-J4-RDz.normalTitle" = "メニューに戻る";
+
+/* Class = "UIButton"; normalTitle = "メニューに戻る"; ObjectID = "T9q-qd-4sE"; */
+"T9q-qd-4sE.normalTitle" = "メニューに戻る";
+
+/* Class = "UIButton"; configuration.title = "はい"; ObjectID = "Tny-Yo-0AW"; */
+"Tny-Yo-0AW.configuration.title" = "はい";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Tny-Yo-0AW"; */
+"Tny-Yo-0AW.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "５"; ObjectID = "TzI-97-IHb"; */
+"TzI-97-IHb.normalTitle" = "５";
+
+/* Class = "UIButton"; normalTitle = "つめろんの遊び方"; ObjectID = "U9l-U0-ycO"; */
+"U9l-U0-ycO.normalTitle" = "つめろんの遊び方";
+
+/* Class = "UIButton"; normalTitle = "４"; ObjectID = "UHo-9f-pRf"; */
+"UHo-9f-pRf.normalTitle" = "４";
+
+/* Class = "UILabel"; text = "１Pの勝ち！"; ObjectID = "UcR-9N-uRN"; */
+"UcR-9N-uRN.text" = "１Pの勝ち！";
+
+/* Class = "UIButton"; normalTitle = "６"; ObjectID = "Ufz-Dc-msI"; */
+"Ufz-Dc-msI.normalTitle" = "６";
+
+/* Class = "UILabel"; text = "１Pの数字は 1234 でした"; ObjectID = "Umz-iF-eJR"; */
+"Umz-iF-eJR.text" = "１Pの数字は 1234 でした";
+
+/* Class = "UIButton"; normalTitle = "２"; ObjectID = "VR4-bj-w4w"; */
+"VR4-bj-w4w.normalTitle" = "２";
+
+/* Class = "UILabel"; text = "スタートを押して下さい"; ObjectID = "VW9-2t-UuD"; */
+"VW9-2t-UuD.text" = "スタートを押して下さい";
+
+/* Class = "UILabel"; text = "メニューに戻りますか？"; ObjectID = "Vpa-gT-ZX4"; */
+"Vpa-gT-ZX4.text" = "メニューに戻りますか？";
+
+/* Class = "UIButton"; normalTitle = "７"; ObjectID = "YIs-6O-UWI"; */
+"YIs-6O-UWI.normalTitle" = "７";
+
+/* Class = "UILabel"; text = "正解は 1234 でした！"; ObjectID = "Yd0-ER-at1"; */
+"Yd0-ER-at1.text" = "正解は 1234 でした！";
+
+/* Class = "UIButton"; normalTitle = "２"; ObjectID = "Ylc-sQ-cQa"; */
+"Ylc-sQ-cQa.normalTitle" = "２";
+
+/* Class = "UIButton"; normalTitle = "８"; ObjectID = "Z7F-IS-hMI"; */
+"Z7F-IS-hMI.normalTitle" = "８";
+
+/* Class = "UIButton"; normalTitle = "０"; ObjectID = "ZOG-E7-PNl"; */
+"ZOG-E7-PNl.normalTitle" = "０";
+
+/* Class = "UIButton"; normalTitle = "０"; ObjectID = "aAb-pz-gMf"; */
+"aAb-pz-gMf.normalTitle" = "０";
+
+/* Class = "UIButton"; normalTitle = "メニューに戻る"; ObjectID = "aRp-SO-eWE"; */
+"aRp-SO-eWE.normalTitle" = "メニューに戻る";
+
+/* Class = "UILabel"; text = "1P"; ObjectID = "aak-5d-Nd7"; */
+"aak-5d-Nd7.text" = "1P";
+
+/* Class = "UILabel"; text = "❤️×"; ObjectID = "bbL-7g-GbX"; */
+"bbL-7g-GbX.text" = "❤️×";
+
+/* Class = "UIButton"; normalTitle = "２"; ObjectID = "byH-Xa-KgX"; */
+"byH-Xa-KgX.normalTitle" = "２";
+
+/* Class = "UIButton"; configuration.title = "いいえ"; ObjectID = "cv1-2g-itw"; */
+"cv1-2g-itw.configuration.title" = "いいえ";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "cv1-2g-itw"; */
+"cv1-2g-itw.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "０"; ObjectID = "dPK-3C-joA"; */
+"dPK-3C-joA.normalTitle" = "０";
+
+/* Class = "UIButton"; normalTitle = "３"; ObjectID = "eck-ZW-UNj"; */
+"eck-ZW-UNj.normalTitle" = "３";
+
+/* Class = "UIButton"; configuration.title = "はい"; ObjectID = "f6R-4d-snj"; */
+"f6R-4d-snj.configuration.title" = "はい";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "f6R-4d-snj"; */
+"f6R-4d-snj.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "８"; ObjectID = "f6e-9B-NqM"; */
+"f6e-9B-NqM.normalTitle" = "８";
+
+/* Class = "UILabel"; text = "２P"; ObjectID = "gM9-Fn-6Rs"; */
+"gM9-Fn-6Rs.text" = "２P";
+
+/* Class = "UIButton"; normalTitle = "メニューに戻る"; ObjectID = "gS0-H5-yVv"; */
+"gS0-H5-yVv.normalTitle" = "メニューに戻る";
+
+/* Class = "UIButton"; normalTitle = "９"; ObjectID = "gja-2U-10u"; */
+"gja-2U-10u.normalTitle" = "９";
+
+/* Class = "UIButton"; normalTitle = "５"; ObjectID = "h0x-jZ-68L"; */
+"h0x-jZ-68L.normalTitle" = "５";
+
+/* Class = "UILabel"; text = ".00"; ObjectID = "hmb-Ka-l5B"; */
+"hmb-Ka-l5B.text" = ".00";
+
+/* Class = "UIButton"; normalTitle = "７"; ObjectID = "hy0-aZ-1Rw"; */
+"hy0-aZ-1Rw.normalTitle" = "７";
+
+/* Class = "UIButton"; normalTitle = "３"; ObjectID = "jFH-EP-VJu"; */
+"jFH-EP-VJu.normalTitle" = "３";
+
+/* Class = "UIButton"; normalTitle = "×"; ObjectID = "kOc-23-Cis"; */
+"kOc-23-Cis.normalTitle" = "×";
+
+/* Class = "UIButton"; normalTitle = "メニューに戻る"; ObjectID = "ljV-W6-xCh"; */
+"ljV-W6-xCh.normalTitle" = "メニューに戻る";
+
+/* Class = "UIButton"; configuration.title = "いいえ"; ObjectID = "lxH-Ck-61S"; */
+"lxH-Ck-61S.configuration.title" = "いいえ";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "lxH-Ck-61S"; */
+"lxH-Ck-61S.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "試行回数："; ObjectID = "m7G-En-m9e"; */
+"m7G-En-m9e.text" = "試行回数：";
+
+/* Class = "UIButton"; normalTitle = "８"; ObjectID = "mCP-Rh-F9r"; */
+"mCP-Rh-F9r.normalTitle" = "８";
+
+/* Class = "UIButton"; normalTitle = "スタート"; ObjectID = "mdA-S9-LZS"; */
+"mdA-S9-LZS.normalTitle" = "スタート";
+
+/* Class = "UIButton"; normalTitle = "１"; ObjectID = "mxT-Br-P2u"; */
+"mxT-Br-P2u.normalTitle" = "１";
+
+/* Class = "UIButton"; configuration.title = "いいえ"; ObjectID = "nA7-9r-rkD"; */
+"nA7-9r-rkD.configuration.title" = "いいえ";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "nA7-9r-rkD"; */
+"nA7-9r-rkD.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "対人対戦"; ObjectID = "nc1-Pv-Cg7"; */
+"nc1-Pv-Cg7.text" = "対人対戦";
+
+/* Class = "UIButton"; normalTitle = "閉じる"; ObjectID = "neD-rU-tCT"; */
+"neD-rU-tCT.normalTitle" = "閉じる";
+
+/* Class = "UILabel"; text = "正解は　1234　でした。"; ObjectID = "nkN-Ak-BgI"; */
+"nkN-Ak-BgI.text" = "正解は　1234　でした。";
+
+/* Class = "UILabel"; text = "リセットしますか？"; ObjectID = "oNL-0g-e9C"; */
+"oNL-0g-e9C.text" = "リセットしますか？";
+
+/* Class = "UILabel"; text = "クリアタイム："; ObjectID = "okw-96-Qad"; */
+"okw-96-Qad.text" = "クリアタイム：";
+
+/* Class = "UILabel"; text = "詰めロン"; ObjectID = "pbX-RM-gKE"; */
+"pbX-RM-gKE.text" = "詰めロン";
+
+/* Class = "UIButton"; normalTitle = "×"; ObjectID = "pcn-Iw-Hhs"; */
+"pcn-Iw-Hhs.normalTitle" = "×";
+
+/* Class = "UIButton"; normalTitle = "戻る"; ObjectID = "pmn-UP-a6j"; */
+"pmn-UP-a6j.normalTitle" = "戻る";
+
+/* Class = "UIButton"; normalTitle = "３"; ObjectID = "qGT-KY-q7n"; */
+"qGT-KY-q7n.normalTitle" = "３";
+
+/* Class = "UILabel"; text = "クリア！"; ObjectID = "qgq-4f-2aK"; */
+"qgq-4f-2aK.text" = "クリア！";
+
+/* Class = "UILabel"; text = "ヘルプメニュー"; ObjectID = "rIp-HH-K94"; */
+"rIp-HH-K94.text" = "ヘルプメニュー";
+
+/* Class = "UIButton"; normalTitle = "９"; ObjectID = "ruN-tL-mQy"; */
+"ruN-tL-mQy.normalTitle" = "９";
+
+/* Class = "UIButton"; normalTitle = "９"; ObjectID = "t3Y-Eq-joK"; */
+"t3Y-Eq-joK.normalTitle" = "９";
+
+/* Class = "UILabel"; text = "□□□□"; ObjectID = "v1g-NU-wh2"; */
+"v1g-NU-wh2.text" = "□□□□";
+
+/* Class = "UIButton"; normalTitle = "OK"; ObjectID = "veU-qc-8Bn"; */
+"veU-qc-8Bn.normalTitle" = "OK";
+
+/* Class = "UIButton"; normalTitle = "リプレイ"; ObjectID = "wAu-WY-bZl"; */
+"wAu-WY-bZl.normalTitle" = "リプレイ";
+
+/* Class = "UIButton"; normalTitle = "０"; ObjectID = "wos-8E-DDf"; */
+"wos-8E-DDf.normalTitle" = "０";
+
+/* Class = "UILabel"; text = "２Pの数字は 1234 でした"; ObjectID = "y6w-cf-LmP"; */
+"y6w-cf-LmP.text" = "２Pの数字は 1234 でした";
+
+/* Class = "UIButton"; normalTitle = "４"; ObjectID = "y9R-pA-Tca"; */
+"y9R-pA-Tca.normalTitle" = "４";
+
+/* Class = "UIButton"; normalTitle = "リセット"; ObjectID = "zUB-um-i3d"; */
+"zUB-um-i3d.normalTitle" = "リセット";
