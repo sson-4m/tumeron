@@ -81,7 +81,7 @@ class TimeAttackViewController: UIViewController{
         }
     }
     
-    @IBAction func startButton(_ sender: Any){
+    @IBAction func startButton(_ sender: UIButton){
         if trueNumbersArray.count == 0{
             showImageTA.isHidden = false
             counterEnabled()
@@ -104,7 +104,7 @@ class TimeAttackViewController: UIViewController{
         }
     }
     
-    @IBAction func button1(_ sender: Any) {
+    @IBAction func button1(_ sender: UIButton) {
         if counter1 == 0{
             judgeNumber(num: 1)
             counter1 += 1
@@ -115,7 +115,7 @@ class TimeAttackViewController: UIViewController{
         }
     }
     
-    @IBAction func button2(_ sender: Any) {
+    @IBAction func button2(_ sender: UIButton) {
         if counter2 == 0{
             judgeNumber(num: 2)
             counter2 += 1
@@ -126,7 +126,7 @@ class TimeAttackViewController: UIViewController{
         }
     }
     
-    @IBAction func button3(_ sender: Any) {
+    @IBAction func button3(_ sender: UIButton) {
         if counter3 == 0{
             judgeNumber(num: 3)
             counter3 += 1
@@ -137,7 +137,7 @@ class TimeAttackViewController: UIViewController{
         }
     }
     
-    @IBAction func button4(_ sender: Any) {
+    @IBAction func button4(_ sender: UIButton) {
         if counter4 == 0{
             judgeNumber(num: 4)
             counter4 += 1
@@ -148,7 +148,7 @@ class TimeAttackViewController: UIViewController{
         }
     }
     
-    @IBAction func button5(_ sender: Any) {
+    @IBAction func button5(_ sender: UIButton) {
         if counter5 == 0{
             judgeNumber(num: 5)
             counter5 += 1
@@ -159,7 +159,7 @@ class TimeAttackViewController: UIViewController{
         }
     }
     
-    @IBAction func button6(_ sender: Any) {
+    @IBAction func button6(_ sender: UIButton) {
         if counter6 == 0{
             judgeNumber(num: 6)
             counter6 += 1
@@ -170,7 +170,7 @@ class TimeAttackViewController: UIViewController{
         }
     }
     
-    @IBAction func button7(_ sender: Any) {
+    @IBAction func button7(_ sender: UIButton) {
         if counter7 == 0{
             judgeNumber(num: 7)
             counter7 += 1
@@ -181,7 +181,7 @@ class TimeAttackViewController: UIViewController{
         }
     }
     
-    @IBAction func button8(_ sender: Any) {
+    @IBAction func button8(_ sender: UIButton) {
         if counter8 == 0{
             judgeNumber(num: 8)
             counter8 += 1
@@ -192,7 +192,7 @@ class TimeAttackViewController: UIViewController{
         }
     }
     
-    @IBAction func button9(_ sender: Any) {
+    @IBAction func button9(_ sender: UIButton) {
         if counter9 == 0{
             judgeNumber(num: 9)
             counter9 += 1
@@ -203,7 +203,7 @@ class TimeAttackViewController: UIViewController{
         }
     }
     
-    @IBAction func button0(_ sender: Any) {
+    @IBAction func button0(_ sender: UIButton) {
         if counter0 == 0{
             judgeNumber(num: 0)
             counter0 += 1
@@ -227,7 +227,7 @@ class TimeAttackViewController: UIViewController{
     }
     
     
-    @IBAction func deleteButton(_ sender: Any) {
+    @IBAction func deleteButton(_ sender: UIButton) {
         if inputNumbersArray.count > 0 && rowCounter != -1{
             inputNumbersArray.removeAll()
             counterEnabled()
@@ -237,18 +237,18 @@ class TimeAttackViewController: UIViewController{
         }
     }
     
-    @IBAction func inputButton(_ sender: Any) {
+    @IBAction func inputButton(_ sender: UIButton) {
         if inputNumbersArray.count == 4 && rowCounter != -1{
             checkNumbers(inputNum: self.inputNumbersArray, trueNum: self.trueNumbersArray)
             
         }
     }
     
-    @IBAction func resetButton(_ sender: Any) {
+    @IBAction func resetButton(_ sender: UIButton) {
         reset()
     }
     
-    @IBAction func backToMenuButton(_ sender: Any) {
+    @IBAction func backToMenuButton(_ sender: UIButton) {
         if timer != nil{
             timer.invalidate()
         }

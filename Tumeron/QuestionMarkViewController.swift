@@ -9,8 +9,12 @@ import UIKit
 import AVFoundation
 import MediaPlayer
 import AVKit
+//import Lottie
 
 class QuestionMarkViewController: UIViewController {
+    
+//    var animationView: AnimationView = AnimationView()
+    
     
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
@@ -36,7 +40,7 @@ class QuestionMarkViewController: UIViewController {
     
     
     
-    @IBAction func playVideoButton(_ sender: Any) {
+    @IBAction func playVideoButton(_ sender: UIButton) {
         playMovie(fileName: "hit-explanation", fileExtension: "mp4")
     }
     
@@ -60,7 +64,7 @@ class QuestionMarkViewController: UIViewController {
         }
     }
     
-    @IBAction func homePageButton(_ sender: Any) {
+    @IBAction func homePageButton(_ sender: UIButton) {
         
         /*
         let alert = UIAlertController(title: "SSONのホームページは現在製作中です", message: "", preferredStyle: UIAlertController.Style.alert)
@@ -80,8 +84,10 @@ class QuestionMarkViewController: UIViewController {
          
     }
     
-    @IBAction func backToMenuButton(_ sender: Any) {
+    @IBAction func backToMenuButton(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
         appDelegate.audioPlayer.play()
     }
+    
+    
 }

@@ -50,13 +50,13 @@ class BattleVer1ResultViewController: UIViewController {
         
     }
     
-    @IBAction func backToMenuButton(_ sender: Any) {
+    @IBAction func backToMenuButton(_ sender: UIButton) {
         audioPlayer4.stop()
         presentingViewController?.presentingViewController?.dismiss(animated: true, completion: nil)
         appDelegate.audioPlayer.play()
     }
     
-    @IBAction func replayButton(_ sender: Any) {
+    @IBAction func replayButton(_ sender: UIButton) {
         audioPlayer4.stop()
         dismiss(animated: true, completion: nil)
         appDelegate.audioPlayerOfGame.play()

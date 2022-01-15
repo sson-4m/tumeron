@@ -118,32 +118,32 @@ internal class ViewController: UIViewController{
         }
     }
     
-    @IBAction func tumeronSelectButton(_ sender: Any) {
+    @IBAction func tumeronSelectButton(_ sender: UIButton) {
         questionMarkButton.isEnabled = false
         battleSelectButton.isEnabled = false
         timeAttackSelectButton.isEnabled = false
         tumeronView.isHidden = false
     }
     
-    @IBAction func tumeronLv1Button(_ sender: Any) {
+    @IBAction func tumeronLv1Button(_ sender: UIButton) {
         buttonEnabled()
         heart = 1
         buttonAction()
     }
     
-    @IBAction func tumeronLv2Button(_ sender: Any) {
+    @IBAction func tumeronLv2Button(_ sender: UIButton) {
         buttonEnabled()
         heart = 2
         buttonAction()
     }
     
-    @IBAction func tumeronLv3Button(_ sender: Any) {
+    @IBAction func tumeronLv3Button(_ sender: UIButton) {
         buttonEnabled()
         heart = 3
         buttonAction()
     }
     
-    @IBAction func closeTumeronView(_ sender: Any) {
+    @IBAction func closeTumeronView(_ sender: UIButton) {
         tumeronView.isHidden = true
         questionMarkButton.isEnabled = true
         battleSelectButton.isEnabled = true
@@ -157,14 +157,14 @@ internal class ViewController: UIViewController{
         tumeronView.isHidden = true
     }
     
-    @IBAction func battleButton(_ sender: Any) {
+    @IBAction func battleButton(_ sender: UIButton) {
         battleView.isHidden = false
         battleSelectButton.isEnabled = false
         timeAttackSelectButton.isEnabled = false
         questionMarkButton.isEnabled = false
     }
     
-    @IBAction func battleVer1Button(_ sender: Any) {
+    @IBAction func battleVer1Button(_ sender: UIButton) {
         appDelegate.audioPlayer.stop()
         appDelegate.audioPlayer.currentTime = 0
         performSegue(withIdentifier: "SegueToBattleVer1", sender: nil)
@@ -172,7 +172,7 @@ internal class ViewController: UIViewController{
         buttonEnabled()
     }
     
-    @IBAction func battleVer2Button(_ sender: Any) {
+    @IBAction func battleVer2Button(_ sender: UIButton) {
         appDelegate.audioPlayer.stop()
         appDelegate.audioPlayer.currentTime = 0
         performSegue(withIdentifier: "SegueToBattleVer2", sender: nil)
@@ -180,7 +180,7 @@ internal class ViewController: UIViewController{
         buttonEnabled()
     }
     
-    @IBAction func closeBattleSelectButton(_ sender: Any) {
+    @IBAction func closeBattleSelectButton(_ sender: UIButton) {
         buttonEnabled()
         battleView.isHidden = true
     }
@@ -197,7 +197,7 @@ internal class ViewController: UIViewController{
         performSegue(withIdentifier: "SegueToTimeAttack", sender: nil)
     }
     
-    @IBAction func questionMarkButton(_ sender: Any) {
+    @IBAction func questionMarkButton(_ sender: UIButton) {
         appDelegate.audioPlayer.stop()
         appDelegate.audioPlayer.currentTime = 0
         performSegue(withIdentifier: "SegueToPopOver", sender: nil)

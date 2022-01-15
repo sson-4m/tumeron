@@ -52,7 +52,7 @@ class GameTumeronResultViewController: UIViewController {
         }
         
     }
-    @IBAction func backToMenuButton(_ sender: Any) {
+    @IBAction func backToMenuButton(_ sender: UIButton) {
         audioPlayer5.stop()
         presentingViewController?.presentingViewController?.dismiss(animated: true, completion: nil)
         appDelegate.audioPlayer.play()

@@ -10,14 +10,15 @@ import UIKit
 class SplashViewController: UIViewController {
     
     
-    
+    /*
     override func viewDidLoad() {
         super.viewDidLoad()
         performSegue(withIdentifier: "segueToMainViewController", sender: nil)
     }
+     */
     
     
-    /*
+    
     
     var logoImageView: UIImageView!
     
@@ -53,7 +54,7 @@ class SplashViewController: UIViewController {
                        delay: 1.3,
                        options: UIView.AnimationOptions.curveEaseOut,
                        animations: { () in
-            self.logoImageView.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
+            self.logoImageView.transform = CGAffineTransform(scaleX: 1.2, y: 1.2)
             self.logoImageView.alpha = 0
         }, completion: { (Bool) in
             self.logoImageView.removeFromSuperview()
@@ -62,7 +63,7 @@ class SplashViewController: UIViewController {
         performSegue(withIdentifier: "segueToMainViewController", sender: nil)
          
     }
-    */
+    
     
     /*
      // MARK: - Navigation
