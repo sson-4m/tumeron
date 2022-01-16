@@ -27,10 +27,10 @@
 		8D65C4EA2638669C00EB5F21 /* QuestionMarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D65C4E92638669C00EB5F21 /* QuestionMarkViewController.swift */; };
 		8D933EF62632989D00EC3788 /* GameTumeronResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D933EF52632989D00EC3788 /* GameTumeronResultViewController.swift */; };
 		8DAB2E4C26BA148A00E204EE /* tumeron-title.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8DAB2E4B26BA148A00E204EE /* tumeron-title.mp4 */; };
+		8DC9054F27945994000F26C7 /* TimeAttackHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC9054E27945994000F26C7 /* TimeAttackHistoryViewController.swift */; };
 		8DD99A46262F2EAF00F072B3 /* TumeronLv1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD99A45262F2EAF00F072B3 /* TumeronLv1ViewController.swift */; };
 		8DE3BC07263C2E5E003FF69E /* BattleVer1ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE3BC06263C2E5E003FF69E /* BattleVer1ResultViewController.swift */; };
 		8DEA46C626419F9600B69624 /* BattleVer2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEA46C526419F9600B69624 /* BattleVer2ViewController.swift */; };
-		8DF6563C2792EC2400AF0937 /* TimeAttackHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF6563B2792EC2400AF0937 /* TimeAttackHistoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,10 +58,10 @@
 		8D65C4E92638669C00EB5F21 /* QuestionMarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionMarkViewController.swift; sourceTree = "<group>"; };
 		8D933EF52632989D00EC3788 /* GameTumeronResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTumeronResultViewController.swift; sourceTree = "<group>"; };
 		8DAB2E4B26BA148A00E204EE /* tumeron-title.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "tumeron-title.mp4"; sourceTree = "<group>"; };
+		8DC9054E27945994000F26C7 /* TimeAttackHistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeAttackHistoryViewController.swift; sourceTree = "<group>"; };
 		8DD99A45262F2EAF00F072B3 /* TumeronLv1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TumeronLv1ViewController.swift; sourceTree = "<group>"; };
 		8DE3BC06263C2E5E003FF69E /* BattleVer1ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleVer1ResultViewController.swift; sourceTree = "<group>"; };
 		8DEA46C526419F9600B69624 /* BattleVer2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleVer2ViewController.swift; sourceTree = "<group>"; };
-		8DF6563B2792EC2400AF0937 /* TimeAttackHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeAttackHistoryViewController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,7 +128,7 @@
 				8D402901264288060067D0FD /* BattleVer2ResultViewController.swift */,
 				8D58212A262C61BE00FBE8C9 /* TimeAttackViewController.swift */,
 				8D03C763262EC573000A9470 /* TimeAttackPopOverViewController.swift */,
-				8DF6563B2792EC2400AF0937 /* TimeAttackHistoryViewController.swift */,
+				8DC9054E27945994000F26C7 /* TimeAttackHistoryViewController.swift */,
 				8D2EA537262C4DF200A9A665 /* Assets.xcassets */,
 				8D5E769F275608870001F5DF /* clear.mp3 */,
 				8D5E76A0275608880001F5DF /* fail.mp3 */,
@@ -272,7 +272,7 @@
 				8D2EA533262C4DF100A9A665 /* ViewController.swift in Sources */,
 				8D2EA52F262C4DF100A9A665 /* AppDelegate.swift in Sources */,
 				8DD99A46262F2EAF00F072B3 /* TumeronLv1ViewController.swift in Sources */,
-				8DF6563C2792EC2400AF0937 /* TimeAttackHistoryViewController.swift in Sources */,
+				8DC9054F27945994000F26C7 /* TimeAttackHistoryViewController.swift in Sources */,
 				8DE3BC07263C2E5E003FF69E /* BattleVer1ResultViewController.swift in Sources */,
 				8D2EA531262C4DF100A9A665 /* SceneDelegate.swift in Sources */,
 				8D58212B262C61BE00FBE8C9 /* TimeAttackViewController.swift in Sources */,
