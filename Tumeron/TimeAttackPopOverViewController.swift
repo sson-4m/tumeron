@@ -10,6 +10,8 @@ import AVFoundation
 
 class TimeAttackPopOverViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
+    @IBOutlet var mainView: UIView!
+    
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
     var audioPlayer4: AVAudioPlayer!
@@ -22,8 +24,35 @@ class TimeAttackPopOverViewController: UIViewController, UITableViewDelegate, UI
     
     var resultArray: [String] = []
     
+    var timeAttackHistoryButton: UIButton = UIButton()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let screenWidth:CGFloat = self.view.frame.width
+        let screenHeight:CGFloat = self.view.frame.height
+        
+        timeAttackHistoryButton = type(of: timeAttackHistoryButton).init(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
+
+        timeAttackHistoryButton.setImage(UIImage(named: "history"), for: .normal)
+        
+        timeAttackHistoryButton.layer.cornerRadius = 30
+        
+        self.mainView.addSubview(timeAttackHistoryButton)
+        
+        timeAttackHistoryButton.translatesAutoresizingMaskIntoConstraints = false
+        
+        //横方向の位置の制約
+        timeAttackHistoryButton.trailingAnchor.constraint(equalTo: mainView.trailingAnchor, constant: -20).isActive = true
+        
+        //縦方向の位置の制約
+        timeAttackHistoryButton.topAnchor.constraint(equalTo: mainView.topAnchor, constant: 30).isActive = true
+        
+        timeAttackHistoryButton.widthAnchor.constraint(equalToConstant: screenWidth / 6).isActive = true
+        
+        timeAttackHistoryButton.heightAnchor.constraint(equalToConstant: screenWidth / 6).isActive = true
+        
+        timeAttackHistoryButton.addTarget(self, action: #selector(buttonTapped(_:)), for: UIControl.Event.touchUpInside)
         
         do {
             let filePath = Bundle.main.path(forResource: "clear",ofType: "mp3")
@@ -36,6 +65,21 @@ class TimeAttackPopOverViewController: UIViewController, UITableViewDelegate, UI
         clearImageView.image =  UIImage(named:"hit5.jpg")
         clearTimeLabel.text = "クリアタイム：　" + text1
         numberOfTrialsLabel.text = "　　試行回数：　"  + text2 + "回"
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "segueToHistoryView"{
+            let TimeAttackHistoryViewController = segue.destination as! TimeAttackHistoryViewController
+            let shownScore: [String] = userDefaults.array(forKey: "score") as? [String] ?? []
+            TimeAttackHistoryViewController.timeAttackHistoryArray = shownScore
+            let viewJudgeNum = 1
+            TimeAttackHistoryViewController.viewNumber = viewJudgeNum
+        }
+    }
+    
+    @objc func buttonTapped(_ sender : Any) {
+        
+        performSegue(withIdentifier: "segueToHistoryView", sender: nil)
     }
     
     @IBAction func backToMenuButton(_ sender: UIButton) {

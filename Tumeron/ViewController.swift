@@ -8,7 +8,11 @@
 import UIKit
 import AVFoundation
 
-internal class ViewController: UIViewController{
+var userDefaults = UserDefaults.standard
+
+
+class ViewController: UIViewController{
+    
     
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
@@ -37,6 +41,7 @@ internal class ViewController: UIViewController{
         super.viewDidLoad()
         
         appDelegate.audioPlayer.play()
+        userDefaults.set("", forKey: "score")
         
         let path = Bundle.main.path(forResource: "tumeron-title", ofType: "mp4")!
         let player = AVPlayer(url: URL(fileURLWithPath: path))

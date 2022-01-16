@@ -850,7 +850,7 @@
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="10"/>
+                                        <integer key="value" value="16"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -867,7 +867,7 @@
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="10"/>
+                                        <integer key="value" value="16"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -1497,7 +1497,7 @@
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="10"/>
+                                        <integer key="value" value="16"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -1513,7 +1513,7 @@
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="10"/>
+                                        <integer key="value" value="16"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -2117,7 +2117,7 @@
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="10"/>
+                                        <integer key="value" value="16"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -2403,7 +2403,7 @@
                                 <color key="backgroundColor" red="1" green="1" blue="0.72941176470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" translatesAutoresizingMaskIntoConstraints="NO" id="1gp-FO-4Kp">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" translatesAutoresizingMaskIntoConstraints="NO" id="1gp-FO-4Kp">
                                         <rect key="frame" x="0.0" y="44.5" width="186" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1gp-FO-4Kp" id="Yyf-ay-SDP">
@@ -2598,7 +2598,7 @@
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="10"/>
+                                        <integer key="value" value="16"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -2614,7 +2614,7 @@
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="10"/>
+                                        <integer key="value" value="16"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -2693,12 +2693,68 @@
                     <connections>
                         <outlet property="clearImageView" destination="Ilv-jN-Vyd" id="3js-1w-RZT"/>
                         <outlet property="clearTimeLabel" destination="okw-96-Qad" id="aIt-r2-LyR"/>
+                        <outlet property="mainView" destination="SVb-35-Dyj" id="Zc4-7p-qAJ"/>
                         <outlet property="numberOfTrialsLabel" destination="m7G-En-m9e" id="3R6-sa-4Kx"/>
+                        <segue destination="6s1-z3-FzI" kind="presentation" identifier="segueToHistoryView" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="PZC-lg-Xwj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fhP-XW-Hdw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1941" y="1126"/>
+        </scene>
+        <!--Time Attack History View Controller-->
+        <scene sceneID="9pp-U9-ZQC">
+            <objects>
+                <viewController id="6s1-z3-FzI" customClass="TimeAttackHistoryViewController" customModule="Tumeron" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vpU-Zj-Sof">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="zSn-3s-A2V">
+                                <rect key="frame" x="20" y="118" width="374" height="594"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.72941176470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="timeAttackHistoryCell" id="GY9-zM-42T">
+                                        <rect key="frame" x="0.0" y="44.5" width="374" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GY9-zM-42T" id="unL-Qw-ghU">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" red="1" green="1" blue="0.72941176470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="6s1-z3-FzI" id="qmg-tQ-g25"/>
+                                    <outlet property="delegate" destination="6s1-z3-FzI" id="k9Q-Pf-8N5"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="タイムアタックの記録" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u90-Oo-ZU6">
+                                <rect key="frame" x="20" y="74" width="374" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="krp-E3-MbF"/>
+                        <color key="backgroundColor" red="1" green="1" blue="0.72941176470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="krp-E3-MbF" firstAttribute="trailing" secondItem="zSn-3s-A2V" secondAttribute="trailing" constant="20" id="BA3-cY-TIl"/>
+                            <constraint firstItem="u90-Oo-ZU6" firstAttribute="leading" secondItem="krp-E3-MbF" secondAttribute="leading" constant="20" id="LWn-rK-jce"/>
+                            <constraint firstItem="krp-E3-MbF" firstAttribute="bottom" secondItem="zSn-3s-A2V" secondAttribute="bottom" constant="150" id="P4Q-3m-pqh"/>
+                            <constraint firstItem="krp-E3-MbF" firstAttribute="trailing" secondItem="u90-Oo-ZU6" secondAttribute="trailing" constant="20" id="ZXW-Oe-yaj"/>
+                            <constraint firstItem="u90-Oo-ZU6" firstAttribute="top" secondItem="krp-E3-MbF" secondAttribute="top" constant="30" id="fn2-VG-P9x"/>
+                            <constraint firstItem="zSn-3s-A2V" firstAttribute="top" secondItem="u90-Oo-ZU6" secondAttribute="bottom" constant="20" id="lhw-ye-cfZ"/>
+                            <constraint firstItem="zSn-3s-A2V" firstAttribute="leading" secondItem="krp-E3-MbF" secondAttribute="leading" constant="20" id="teJ-8S-o8i"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="timeAttackHistoryTable" destination="zSn-3s-A2V" id="V5y-8a-agy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HaY-is-39v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2857" y="1126"/>
         </scene>
     </scenes>
     <resources>

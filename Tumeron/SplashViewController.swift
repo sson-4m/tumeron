@@ -51,7 +51,7 @@ class SplashViewController: UIViewController {
        
         //拡大させて、消えるアニメーション
         UIView.animate(withDuration: 0.3,
-                       delay: 1.3,
+                       delay: 0,
                        options: UIView.AnimationOptions.curveEaseOut,
                        animations: { () in
             self.logoImageView.transform = CGAffineTransform(scaleX: 1.2, y: 1.2)

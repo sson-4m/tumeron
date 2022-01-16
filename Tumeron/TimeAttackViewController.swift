@@ -10,6 +10,7 @@ import AVFoundation
 
 class TimeAttackViewController: UIViewController{
     
+    
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
     @IBOutlet weak var showImageTA: UIImageView! //イラストの表示
@@ -33,6 +34,10 @@ class TimeAttackViewController: UIViewController{
     @IBOutlet weak var button9: UIButton!
     @IBOutlet weak var button0: UIButton!
     
+    
+    var minute: Int = 0
+    var second: Int = 0
+    var msec: Int = 0
     
     weak var timer: Timer! //時間
     var startTime = Date()
@@ -64,10 +69,14 @@ class TimeAttackViewController: UIViewController{
     var counter0 = 1
     var rowCounter = 0
     
+    var score: Int = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         appDelegate.audioPlayerOfGame.play()
+        
+        
         
         
     }
@@ -78,6 +87,10 @@ class TimeAttackViewController: UIViewController{
             TimeAttackPopOverViewController.text1 = passedTime
             TimeAttackPopOverViewController.text2 = String(rowCounter)
             TimeAttackPopOverViewController.resultArray = resultspassedArray
+            var getScores: [String] = userDefaults.array(forKey: "score") as? [String] ?? []
+            let savedInformation = "タイム: " + passedTime + "  試行回数:" + String(rowCounter) + "回"
+            getScores.append(savedInformation)
+            userDefaults.set(getScores, forKey: "score")
         }
     }
     
@@ -262,11 +275,11 @@ class TimeAttackViewController: UIViewController{
         // タイマー開始からのインターバル時間
         let currentTime = Date().timeIntervalSince(startTime)
         // fmod() 余りを計算
-        let minute = (Int)(fmod((currentTime/60), 60))
+        minute = (Int)(fmod((currentTime/60), 60))
         // currentTime/60 の余り
-        let second = (Int)(fmod(currentTime, 60))
+        second = (Int)(fmod(currentTime, 60))
         // floor 切り捨て、小数点以下を取り出して *100
-        let msec = (Int)((currentTime - floor(currentTime))*100)
+        msec = (Int)((currentTime - floor(currentTime))*100)
         // %02d： ２桁表示、0で埋める
         sMinute = String(format:"%02d", minute)
         sSecond = String(format:"%02d", second)
@@ -293,6 +306,7 @@ class TimeAttackViewController: UIViewController{
         }
         if h == 4{ //全部答えと一緒だったときの処理
             showResult(inputNumber: inputNum, checkH: h, checkB: b)
+            
             showPopup()
             reset()
         }else { //答えと一致しない時
@@ -315,6 +329,11 @@ class TimeAttackViewController: UIViewController{
         resultsUpdatedInTableView.insert(result, at: 0)
         resultspassedArray.append(resultspassed)
         tableView.reloadData()
+        calculateScore()
+    }
+    
+    func calculateScore(){
+         score = (minute * 60 + second + msec) * 100 * rowCounter
     }
     
     func showPopup(){
