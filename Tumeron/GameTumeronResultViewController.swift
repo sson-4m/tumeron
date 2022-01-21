@@ -19,8 +19,6 @@ class GameTumeronResultViewController: UIViewController {
     @IBOutlet weak var resultLabel: UILabel!
     var textResult = ""
     @IBOutlet weak var resultViewImage: UIImageView!
-    let imageClear = UIImage(named:"tumeron-clear.jpg")!
-    let imageFail = UIImage(named:"tumeron-fail.jpg")!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +27,7 @@ class GameTumeronResultViewController: UIViewController {
         
         if counter == 1{
             do {
-                resultViewImage.image = imageFail
+                resultViewImage.image =  UIImage(named:"tumeron-fail")
                 clearOrFail.text = "残念！"
                 let filePath = Bundle.main.path(forResource: "fail",ofType: "mp3")
                 let musicPath = URL(fileURLWithPath: filePath!)
@@ -40,7 +38,7 @@ class GameTumeronResultViewController: UIViewController {
             }
         }else{
             do {
-                resultViewImage.image = imageClear
+                resultViewImage.image = UIImage(named:"tumeron-clear")
                 clearOrFail.text = "クリア！"
                 let filePath = Bundle.main.path(forResource: "clear",ofType: "mp3")
                 let musicPath = URL(fileURLWithPath: filePath!)

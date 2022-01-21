@@ -87,10 +87,10 @@ class TimeAttackViewController: UIViewController{
             TimeAttackPopOverViewController.text1 = passedTime
             TimeAttackPopOverViewController.text2 = String(rowCounter)
             TimeAttackPopOverViewController.resultArray = resultspassedArray
-            var getScores: [String] = userDefaults.array(forKey: "score") as? [String] ?? []
+            var getScores: [String] = UserDefaults.standard.array(forKey: "score") as? [String] ?? []
             let savedInformation = "タイム: " + passedTime + "  試行回数:" + String(rowCounter) + "回"
             getScores.append(savedInformation)
-            userDefaults.set(getScores, forKey: "score")
+            UserDefaults.standard.set(getScores, forKey: "score")
         }
     }
     

@@ -32,6 +32,7 @@ class TimeAttackPopOverViewController: UIViewController, UITableViewDelegate, UI
         let screenWidth:CGFloat = self.view.frame.width
         let screenHeight:CGFloat = self.view.frame.height
         
+        /*
         timeAttackHistoryButton = type(of: timeAttackHistoryButton).init(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
 
         timeAttackHistoryButton.setImage(UIImage(named: "history"), for: .normal)
@@ -53,7 +54,8 @@ class TimeAttackPopOverViewController: UIViewController, UITableViewDelegate, UI
         timeAttackHistoryButton.heightAnchor.constraint(equalToConstant: screenWidth / 6).isActive = true
         
         timeAttackHistoryButton.addTarget(self, action: #selector(buttonTapped(_:)), for: UIControl.Event.touchUpInside)
-        
+        */
+         
         do {
             let filePath = Bundle.main.path(forResource: "clear",ofType: "mp3")
             let musicPath = URL(fileURLWithPath: filePath!)
@@ -62,7 +64,7 @@ class TimeAttackPopOverViewController: UIViewController, UITableViewDelegate, UI
         } catch {
             print("error")
         }
-        clearImageView.image =  UIImage(named:"hit5.jpg")
+        clearImageView.image =  UIImage(named:"tumeron-clear")
         clearTimeLabel.text = "クリアタイム：　" + text1
         numberOfTrialsLabel.text = "　　試行回数：　"  + text2 + "回"
     }
@@ -70,9 +72,9 @@ class TimeAttackPopOverViewController: UIViewController, UITableViewDelegate, UI
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "segueToHistoryView"{
             let TimeAttackHistoryViewController = segue.destination as! TimeAttackHistoryViewController
-            let shownScore: [String] = userDefaults.array(forKey: "score") as? [String] ?? []
+            let shownScore: [String] = UserDefaults.standard.array(forKey: "score") as? [String] ?? []
             TimeAttackHistoryViewController.timeAttackHistoryArray = shownScore
-            let viewJudgeNum = 1
+            let viewJudgeNum = 2
             TimeAttackHistoryViewController.viewNumber = viewJudgeNum
         }
     }

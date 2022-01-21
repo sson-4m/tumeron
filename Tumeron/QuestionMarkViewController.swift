@@ -21,6 +21,19 @@ class QuestionMarkViewController: UIViewController {
     var playerController = AVPlayerViewController()
     var player = AVPlayer()
     
+    @IBOutlet weak var homePageButton: UIButton!
+    var timeAttackHistoryButton: UIButton = UIButton()
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+       if segue.identifier == "segueToHistoryViewFromVC"{
+            let TimeAttackHistoryViewController = segue.destination as! TimeAttackHistoryViewController
+            let shownScore: [String] = UserDefaults.standard.array(forKey: "score") as? [String] ?? []
+            TimeAttackHistoryViewController.timeAttackHistoryArray = shownScore
+            let viewJudgeNum = 1
+            TimeAttackHistoryViewController.viewNumber = viewJudgeNum
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -36,9 +49,29 @@ class QuestionMarkViewController: UIViewController {
         } catch {
             
         }
+        /*
+        timeAttackHistoryButton = type(of: timeAttackHistoryButton).init(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
+        timeAttackHistoryButton.backgroundColor = UIColor(red: 255/255, green: 88/255, blue: 56/255, alpha: 1.0)
+        timeAttackHistoryButton.setTitleColor(UIColor(red: 255/255, green: 255/255, blue: 186/255, alpha: 1.0), for: .normal)
+        timeAttackHistoryButton.setTitle("タイムアタックの記録", for: .normal)
+        timeAttackHistoryButton.titleLabel?.font = UIFont.systemFont(ofSize: 30)
+        timeAttackHistoryButton.titleLabel?.adjustsFontSizeToFitWidth = true
+        timeAttackHistoryButton.layer.cornerRadius = 15
+        self.view.addSubview(timeAttackHistoryButton)
+        timeAttackHistoryButton.translatesAutoresizingMaskIntoConstraints = false
+        timeAttackHistoryButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        timeAttackHistoryButton.topAnchor.constraint(equalTo: homePageButton.bottomAnchor, constant: 40).isActive = true
+        timeAttackHistoryButton.widthAnchor.constraint(equalTo: homePageButton.widthAnchor).isActive = true
+        timeAttackHistoryButton.heightAnchor.constraint(equalTo: homePageButton.heightAnchor).isActive = true
+        timeAttackHistoryButton.addTarget(self, action: #selector(buttonTapped(_:)), for: UIControl.Event.touchUpInside)
+         */
     }
     
-    
+    @objc func buttonTapped(_ sender : Any) {
+            appDelegate.audioPlayer.stop()
+            appDelegate.audioPlayer.currentTime = 0
+            performSegue(withIdentifier: "segueToHistoryViewFromVC", sender: nil)
+    }
     
     @IBAction func playVideoButton(_ sender: UIButton) {
         playMovie(fileName: "hit-explanation", fileExtension: "mp4")
