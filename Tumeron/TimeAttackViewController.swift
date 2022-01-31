@@ -76,9 +76,9 @@ class TimeAttackViewController: UIViewController{
         
         appDelegate.audioPlayerOfGame.play()
         
-        
-        
-        
+        timerMinute.isHidden = true
+        timerSecond.isHidden = true
+        timerMSec.isHidden = true
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

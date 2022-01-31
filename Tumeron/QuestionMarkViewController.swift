@@ -13,7 +13,7 @@ import AVKit
 
 class QuestionMarkViewController: UIViewController {
     
-//    var animationView: AnimationView = AnimationView()
+    //    var animationView: AnimationView = AnimationView()
     
     
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
@@ -21,11 +21,16 @@ class QuestionMarkViewController: UIViewController {
     var playerController = AVPlayerViewController()
     var player = AVPlayer()
     
-    @IBOutlet weak var homePageButton: UIButton!
+    
+    var helpMenuLabel: UILabel = UILabel()
+    var howToPlayButton: UIButton = UIButton()
+    var homePageButton: UIButton = UIButton()
+    var backToMenuButton: UIButton = UIButton()
+    
     var timeAttackHistoryButton: UIButton = UIButton()
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-       if segue.identifier == "segueToHistoryViewFromVC"{
+        if segue.identifier == "segueToHistoryViewFromVC"{
             let TimeAttackHistoryViewController = segue.destination as! TimeAttackHistoryViewController
             let shownScore: [String] = UserDefaults.standard.array(forKey: "score") as? [String] ?? []
             TimeAttackHistoryViewController.timeAttackHistoryArray = shownScore
@@ -49,32 +54,119 @@ class QuestionMarkViewController: UIViewController {
         } catch {
             
         }
+        
+    }
+    
+    override func viewWillLayoutSubviews() {
         /*
-        timeAttackHistoryButton = type(of: timeAttackHistoryButton).init(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
-        timeAttackHistoryButton.backgroundColor = UIColor(red: 255/255, green: 88/255, blue: 56/255, alpha: 1.0)
-        timeAttackHistoryButton.setTitleColor(UIColor(red: 255/255, green: 255/255, blue: 186/255, alpha: 1.0), for: .normal)
-        timeAttackHistoryButton.setTitle("タイムアタックの記録", for: .normal)
-        timeAttackHistoryButton.titleLabel?.font = UIFont.systemFont(ofSize: 30)
-        timeAttackHistoryButton.titleLabel?.adjustsFontSizeToFitWidth = true
-        timeAttackHistoryButton.layer.cornerRadius = 15
-        self.view.addSubview(timeAttackHistoryButton)
-        timeAttackHistoryButton.translatesAutoresizingMaskIntoConstraints = false
-        timeAttackHistoryButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        timeAttackHistoryButton.topAnchor.constraint(equalTo: homePageButton.bottomAnchor, constant: 40).isActive = true
-        timeAttackHistoryButton.widthAnchor.constraint(equalTo: homePageButton.widthAnchor).isActive = true
-        timeAttackHistoryButton.heightAnchor.constraint(equalTo: homePageButton.heightAnchor).isActive = true
-        timeAttackHistoryButton.addTarget(self, action: #selector(buttonTapped(_:)), for: UIControl.Event.touchUpInside)
+         timeAttackHistoryButton.backgroundColor = UIColor(red: 255/255, green: 88/255, blue: 56/255, alpha: 1.0)
+         timeAttackHistoryButton.setTitleColor(UIColor(red: 255/255, green: 255/255, blue: 186/255, alpha: 1.0), for: .normal)
+         timeAttackHistoryButton.setTitle("タイムアタックの記録", for: .normal)
+         timeAttackHistoryButton.titleLabel?.font = UIFont.systemFont(ofSize: 30)
+         timeAttackHistoryButton.titleLabel?.adjustsFontSizeToFitWidth = true
+         timeAttackHistoryButton.layer.cornerRadius = 15
+         self.view.addSubview(timeAttackHistoryButton)
+         timeAttackHistoryButton.translatesAutoresizingMaskIntoConstraints = false
+         timeAttackHistoryButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+         timeAttackHistoryButton.topAnchor.constraint(equalTo: homePageButton.bottomAnchor, constant: 40).isActive = true
+         timeAttackHistoryButton.widthAnchor.constraint(equalTo: homePageButton.widthAnchor).isActive = true
+         timeAttackHistoryButton.heightAnchor.constraint(equalTo: homePageButton.heightAnchor).isActive = true
+         timeAttackHistoryButton.tag = 0
+         timeAttackHistoryButton.addTarget(self, action: #selector(buttonTapped(_:)), for: UIControl.Event.touchUpInside)
          */
+        
+        
+        helpMenuLabel.textColor = UIColor.brown
+        helpMenuLabel.text = "ヘルプメニュー"
+        helpMenuLabel.textAlignment = NSTextAlignment.center
+        helpMenuLabel.font = UIFont.systemFont(ofSize: 35)
+        helpMenuLabel.adjustsFontSizeToFitWidth = true
+        self.view.addSubview(helpMenuLabel)
+        helpMenuLabel.translatesAutoresizingMaskIntoConstraints = false
+        helpMenuLabel.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
+        helpMenuLabel.topAnchor.constraint(equalTo: self.view.topAnchor, constant: self.view.safeAreaInsets.top + self.view.frame.width * 0.2).isActive = true
+        helpMenuLabel.widthAnchor.constraint(equalTo: self.view.widthAnchor, multiplier: 0.7).isActive = true
+        //        helpMenuLabel.heightAnchor.constraint(equalTo: homePageButton.heightAnchor).isActive = true
+        
+        
+        howToPlayButton.backgroundColor = UIColor(red: 255/255, green: 88/255, blue: 56/255, alpha: 1.0)
+        howToPlayButton.setTitleColor(UIColor(red: 255/255, green: 255/255, blue: 186/255, alpha: 1.0), for: .normal)
+        howToPlayButton.setTitle("ゲームの遊び方", for: .normal)
+        howToPlayButton.titleLabel?.font = UIFont.systemFont(ofSize: 25)
+        howToPlayButton.titleLabel?.adjustsFontSizeToFitWidth = true
+        howToPlayButton.layer.cornerRadius = 15
+        self.view.addSubview(howToPlayButton)
+        howToPlayButton.translatesAutoresizingMaskIntoConstraints = false
+        howToPlayButton.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
+        howToPlayButton.topAnchor.constraint(equalTo: helpMenuLabel.bottomAnchor, constant:  self.view.frame.width / 5).isActive = true
+        howToPlayButton.widthAnchor.constraint(equalTo: self.view.widthAnchor, multiplier: 0.7).isActive = true
+        howToPlayButton.heightAnchor.constraint(equalTo: self.view.widthAnchor, multiplier: 0.12).isActive = true
+        howToPlayButton.tag = 1
+        howToPlayButton.addTarget(self, action: #selector(buttonTapped(_:)), for: UIControl.Event.touchUpInside)
+        
+        
+        homePageButton.backgroundColor = UIColor(red: 255/255, green: 88/255, blue: 56/255, alpha: 1.0)
+        homePageButton.setTitleColor(UIColor(red: 255/255, green: 255/255, blue: 186/255, alpha: 1.0), for: .normal)
+        homePageButton.setTitle("SSONの活動紹介", for: .normal)
+        homePageButton.titleLabel?.font = UIFont.systemFont(ofSize: 25)
+        homePageButton.titleLabel?.adjustsFontSizeToFitWidth = true
+        homePageButton.layer.cornerRadius = 15
+        self.view.addSubview(homePageButton)
+        homePageButton.translatesAutoresizingMaskIntoConstraints = false
+        homePageButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        homePageButton.topAnchor.constraint(equalTo: howToPlayButton.bottomAnchor, constant:  self.view.bounds.width / 7).isActive = true
+        homePageButton.widthAnchor.constraint(equalTo: howToPlayButton.widthAnchor).isActive = true
+        homePageButton.heightAnchor.constraint(equalTo: howToPlayButton.heightAnchor).isActive = true
+        homePageButton.tag = 2
+        homePageButton.addTarget(self, action: #selector(buttonTapped(_:)), for: UIControl.Event.touchUpInside)
+        
+        
+        backToMenuButton.setTitleColor(UIColor.brown, for: .normal)
+        backToMenuButton.setTitle("戻る", for: .normal)
+        backToMenuButton.titleLabel?.font = UIFont.systemFont(ofSize: 30)
+        backToMenuButton.titleLabel?.adjustsFontSizeToFitWidth = true
+        self.view.addSubview(backToMenuButton)
+        backToMenuButton.translatesAutoresizingMaskIntoConstraints = false
+        backToMenuButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        backToMenuButton.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: -self.view.safeAreaInsets.bottom - 20).isActive = true
+        
+        backToMenuButton.tag = 3
+        backToMenuButton.addTarget(self, action: #selector(buttonTapped(_:)), for: UIControl.Event.touchUpInside)
+        
+        
     }
     
     @objc func buttonTapped(_ sender : Any) {
+        switch (sender as AnyObject).tag{
+        case 0:
             appDelegate.audioPlayer.stop()
             appDelegate.audioPlayer.currentTime = 0
             performSegue(withIdentifier: "segueToHistoryViewFromVC", sender: nil)
-    }
-    
-    @IBAction func playVideoButton(_ sender: UIButton) {
-        playMovie(fileName: "hit-explanation", fileExtension: "mp4")
+        case 1:
+            
+            //playMovie(fileName: "hit-explanation", fileExtension: "mp4")
+            
+            performSegue(withIdentifier: "segueToHowToUseViewController", sender: nil)
+        case 2:
+            /*
+             let alert = UIAlertController(title: "SSONのホームページは現在製作中です", message: "", preferredStyle: UIAlertController.Style.alert)
+             let close = UIAlertAction(title: "閉じる", style: .cancel) {(action) -> Void in
+             
+             }
+             
+             alert.addAction(close)
+             
+             self.present(alert, animated: true, completion: nil)
+             */
+            
+            let url = URL(string: "https://spiritualstateofnothing.jimdofree.com")!
+            if UIApplication.shared.canOpenURL(url) {
+                UIApplication.shared.open(url)
+            }
+        default:
+            dismiss(animated: true, completion: nil)
+            appDelegate.audioPlayer.play()
+        }
     }
     
     /// 動画プレイヤーにアイテムをセットして更新
@@ -96,31 +188,4 @@ class QuestionMarkViewController: UIViewController {
             self.player.play()
         }
     }
-    
-    @IBAction func homePageButton(_ sender: UIButton) {
-        
-        /*
-        let alert = UIAlertController(title: "SSONのホームページは現在製作中です", message: "", preferredStyle: UIAlertController.Style.alert)
-        let close = UIAlertAction(title: "閉じる", style: .cancel) {(action) -> Void in
-            
-        }
-        
-        alert.addAction(close)
-        
-        self.present(alert, animated: true, completion: nil)
-         */
-        
-        let url = URL(string: "https://spiritualstateofnothing.jimdofree.com")!
-                if UIApplication.shared.canOpenURL(url) {
-                    UIApplication.shared.open(url)
-                }
-         
-    }
-    
-    @IBAction func backToMenuButton(_ sender: UIButton) {
-        dismiss(animated: true, completion: nil)
-        appDelegate.audioPlayer.play()
-    }
-    
-    
 }

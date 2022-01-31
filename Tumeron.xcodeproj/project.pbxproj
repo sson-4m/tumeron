@@ -29,6 +29,7 @@
 		8DAB2E4C26BA148A00E204EE /* tumeron-title.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8DAB2E4B26BA148A00E204EE /* tumeron-title.mp4 */; };
 		8DC9054F27945994000F26C7 /* TimeAttackHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC9054E27945994000F26C7 /* TimeAttackHistoryViewController.swift */; };
 		8DD99A46262F2EAF00F072B3 /* TumeronLv1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD99A45262F2EAF00F072B3 /* TumeronLv1ViewController.swift */; };
+		8DE05207279AB28E00D0EB4E /* HowToUseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE05206279AB28E00D0EB4E /* HowToUseViewController.swift */; };
 		8DE3BC07263C2E5E003FF69E /* BattleVer1ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE3BC06263C2E5E003FF69E /* BattleVer1ResultViewController.swift */; };
 		8DEA46C626419F9600B69624 /* BattleVer2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEA46C526419F9600B69624 /* BattleVer2ViewController.swift */; };
 /* End PBXBuildFile section */
@@ -60,6 +61,7 @@
 		8DAB2E4B26BA148A00E204EE /* tumeron-title.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "tumeron-title.mp4"; sourceTree = "<group>"; };
 		8DC9054E27945994000F26C7 /* TimeAttackHistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeAttackHistoryViewController.swift; sourceTree = "<group>"; };
 		8DD99A45262F2EAF00F072B3 /* TumeronLv1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TumeronLv1ViewController.swift; sourceTree = "<group>"; };
+		8DE05206279AB28E00D0EB4E /* HowToUseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToUseViewController.swift; sourceTree = "<group>"; };
 		8DE3BC06263C2E5E003FF69E /* BattleVer1ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleVer1ResultViewController.swift; sourceTree = "<group>"; };
 		8DEA46C526419F9600B69624 /* BattleVer2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleVer2ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -120,6 +122,7 @@
 				8D2EA534262C4DF100A9A665 /* Main.storyboard */,
 				8D2EA532262C4DF100A9A665 /* ViewController.swift */,
 				8D65C4E92638669C00EB5F21 /* QuestionMarkViewController.swift */,
+				8DE05206279AB28E00D0EB4E /* HowToUseViewController.swift */,
 				8DD99A45262F2EAF00F072B3 /* TumeronLv1ViewController.swift */,
 				8D933EF52632989D00EC3788 /* GameTumeronResultViewController.swift */,
 				8D327111263ACA7A00E3F3C8 /* BattleVer1ViewController.swift */,
@@ -268,6 +271,7 @@
 				8D03C764262EC573000A9470 /* TimeAttackPopOverViewController.swift in Sources */,
 				8D402902264288060067D0FD /* BattleVer2ResultViewController.swift in Sources */,
 				8D65C4EA2638669C00EB5F21 /* QuestionMarkViewController.swift in Sources */,
+				8DE05207279AB28E00D0EB4E /* HowToUseViewController.swift in Sources */,
 				8D4D0552278B83A0009A1144 /* SplashViewController.swift in Sources */,
 				8D2EA533262C4DF100A9A665 /* ViewController.swift in Sources */,
 				8D2EA52F262C4DF100A9A665 /* AppDelegate.swift in Sources */,
@@ -353,7 +357,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -409,7 +413,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -429,7 +433,7 @@
 				CURRENT_PROJECT_VERSION = 1.0.3;
 				DEVELOPMENT_TEAM = 9KT9YTCNC5;
 				INFOPLIST_FILE = Tumeron/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,7 +456,7 @@
 				CURRENT_PROJECT_VERSION = 1.0.3;
 				DEVELOPMENT_TEAM = 9KT9YTCNC5;
 				INFOPLIST_FILE = Tumeron/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
