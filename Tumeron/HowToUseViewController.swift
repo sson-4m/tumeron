@@ -30,6 +30,7 @@ class HowToUseViewController: UIViewController {
     var hTPLabel7: UILabel = UILabel()
     var hTPLabel8: UILabel = UILabel()
     var hTPLabel9: UILabel = UILabel()
+    var hTPLabel10: UILabel = UILabel()
     
     var backToMenuButton: UIButton = UIButton()
     
@@ -81,7 +82,7 @@ class HowToUseViewController: UIViewController {
         contentsView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor, constant: 0).isActive = true
         contentsView.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor, constant: 0).isActive = true
         contentsView.widthAnchor.constraint(equalTo: outView.widthAnchor).isActive = true
-        contentsView.heightAnchor.constraint(equalToConstant: 3300).isActive = true
+        contentsView.heightAnchor.constraint(equalToConstant: 3450).isActive = true
         
          
         scrollView.flashScrollIndicators()
@@ -103,7 +104,7 @@ class HowToUseViewController: UIViewController {
         backToMenuButton.addTarget(self, action: #selector(buttonTapped(_:)), for: UIControl.Event.touchUpInside)
         
         
-        hTPLabel1.text = "詰めロンは4つの隠された数字を当てるゲームです。"
+        hTPLabel1.text = "詰めロンは4つの数字を当てるゲームです"
         hTPLabel1.numberOfLines = 0
         hTPLabel1.font = hTPLabel1.font.withSize(22)
         hTPLabel1.tintColor = UIColor.black
@@ -115,7 +116,7 @@ class HowToUseViewController: UIViewController {
         hTPLabel1.trailingAnchor.constraint(equalTo: contentsView.trailingAnchor, constant: -0).isActive = true
         
         
-        hTPLabel2.text = "１　ゲーム画面について"
+        hTPLabel2.text = "◯　ゲーム画面について"
         hTPLabel2.font = hTPLabel2.font.withSize(26)
 //        hTPLabel2.adjustsFontSizeToFitWidth = true
 //        hTPLabel2.minimumScaleFactor = 0.5
@@ -151,17 +152,29 @@ class HowToUseViewController: UIViewController {
         hTPLabel3.trailingAnchor.constraint(equalTo: contentsView.trailingAnchor, constant: -10).isActive = true
         
         
-        hTPLabel4.text = "２　詰めロン"
-        hTPLabel4.font = hTPLabel4.font.withSize(26)
-//        hTPLabel4.adjustsFontSizeToFitWidth = true
-//        hTPLabel4.minimumScaleFactor = 0.5
+        hTPLabel4.text = "このゲームには３つのモードがあります。"
+        hTPLabel4.font = hTPLabel4.font.withSize(25)
+        hTPLabel4.numberOfLines = 0
         hTPLabel4.tintColor = UIColor.black
         contentsView.addSubview(hTPLabel4)
         hTPLabel4.translatesAutoresizingMaskIntoConstraints = false
         hTPLabel4.centerXAnchor.constraint(equalTo: contentsView.centerXAnchor).isActive = true
-        hTPLabel4.topAnchor.constraint(equalTo: hTPLabel3.bottomAnchor, constant: 30).isActive = true
+        hTPLabel4.topAnchor.constraint(equalTo: hTPLabel3.bottomAnchor, constant: 40).isActive = true
         hTPLabel4.leadingAnchor.constraint(equalTo: contentsView.leadingAnchor, constant: 10).isActive = true
         hTPLabel4.trailingAnchor.constraint(equalTo: contentsView.trailingAnchor, constant: -10).isActive = true
+        
+        
+        hTPLabel5.text = "1　詰めロン"
+        hTPLabel5.font = hTPLabel5.font.withSize(26)
+//        hTPLabel4.adjustsFontSizeToFitWidth = true
+//        hTPLabel4.minimumScaleFactor = 0.5
+        hTPLabel5.tintColor = UIColor.black
+        contentsView.addSubview(hTPLabel5)
+        hTPLabel5.translatesAutoresizingMaskIntoConstraints = false
+        hTPLabel5.centerXAnchor.constraint(equalTo: contentsView.centerXAnchor).isActive = true
+        hTPLabel5.topAnchor.constraint(equalTo: hTPLabel4.bottomAnchor, constant: 30).isActive = true
+        hTPLabel5.leadingAnchor.constraint(equalTo: contentsView.leadingAnchor, constant: 10).isActive = true
+        hTPLabel5.trailingAnchor.constraint(equalTo: contentsView.trailingAnchor, constant: -10).isActive = true
         
         
         howToUseIV2.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 186/255, alpha: 1.0)
@@ -170,34 +183,34 @@ class HowToUseViewController: UIViewController {
         self.contentsView.addSubview(howToUseIV2)
         howToUseIV2.translatesAutoresizingMaskIntoConstraints = false
         howToUseIV2.centerXAnchor.constraint(equalTo: contentsView.centerXAnchor).isActive = true
-        howToUseIV2.topAnchor.constraint(equalTo: hTPLabel4.bottomAnchor, constant: 0).isActive = true
+        howToUseIV2.topAnchor.constraint(equalTo: hTPLabel5.bottomAnchor, constant: 0).isActive = true
         howToUseIV2.leadingAnchor.constraint(equalTo: contentsView.leadingAnchor, constant: 10).isActive = true
         howToUseIV2.trailingAnchor.constraint(equalTo: contentsView.trailingAnchor, constant: -10).isActive = true
         
         
-        hTPLabel5.text = "上の画面は詰めロンの、ヒントエリアとイラストエリアの画面です。\n\n右上のライフは数字を入力できる回数を表します。\n\n　ヒントの見方を説明します。\n　=の左側の数と答えを比較した結果が=の右側に出ています。\n　上の画面での答えは6870です。それを踏まえて、1行目の1765と答えの6870を比較すると、7と6が共通して使われていることがわかると思います。しかし使われている場所までは一致していません。同じ数字が使われているけど場所が異なるとき、Bの左側にそのような数字の個数が表示されます。\n　3行目の2857と答えの6870を比較すると、8と7が共通して使われていて、8は使われている場所も同じです（ヒントでも答えの数字内でも左から２番目にありますね！）。Hの左側にはそのような数字の個数が表示されます。\n\n　詰めロンでは自分が入力した数字もヒントに追加されるようになっています。答えがわからないときは入力してみて、改めて答えを考えてみましょう！"
-        hTPLabel5.numberOfLines = 0
-        hTPLabel5.font = hTPLabel5.font.withSize(19)
-        hTPLabel5.tintColor = UIColor.black
-        contentsView.addSubview(hTPLabel5)
-        hTPLabel5.translatesAutoresizingMaskIntoConstraints = false
-        hTPLabel5.centerXAnchor.constraint(equalTo: contentsView.centerXAnchor).isActive = true
-        hTPLabel5.topAnchor.constraint(equalTo: howToUseIV2.bottomAnchor, constant: 20).isActive = true
-        hTPLabel5.leadingAnchor.constraint(equalTo: contentsView.leadingAnchor, constant: 10).isActive = true
-        hTPLabel5.trailingAnchor.constraint(equalTo: contentsView.trailingAnchor, constant: -10).isActive = true
-        
-        
-        hTPLabel6.text = "３　対人対戦"
-        hTPLabel6.font = hTPLabel6.font.withSize(26)
-//        hTPLabel4.adjustsFontSizeToFitWidth = true
-//        hTPLabel4.minimumScaleFactor = 0.5
+        hTPLabel6.text = "上の画面は詰めロンの、ヒントエリアとイラストエリアの画面です。\n\n右上のライフは数字を入力できる回数を表します。\n\n　ヒントの見方を説明します。\n　=の左側の数と答えを比較した結果が=の右側に出ています。\n　上の画面での答えは6870です。それを踏まえて、1行目の1765と答えの6870を比較すると、7と6が共通して使われていることがわかると思います。しかし使われている場所までは一致していません。同じ数字が使われているけど場所が異なるとき、Bの左側にそのような数字の個数が表示されます。\n　3行目の2857と答えの6870を比較すると、8と7が共通して使われていて、8は使われている場所も同じです（ヒントでも答えの数字内でも左から２番目にありますね！）。Hの左側にはそのような数字の個数が表示されます。\n\n　詰めロンでは自分が入力した数字もヒントに追加されるようになっています。答えがわからないときは入力してみて、改めて答えを考えてみましょう！"
+        hTPLabel6.numberOfLines = 0
+        hTPLabel6.font = hTPLabel6.font.withSize(19)
         hTPLabel6.tintColor = UIColor.black
         contentsView.addSubview(hTPLabel6)
         hTPLabel6.translatesAutoresizingMaskIntoConstraints = false
         hTPLabel6.centerXAnchor.constraint(equalTo: contentsView.centerXAnchor).isActive = true
-        hTPLabel6.topAnchor.constraint(equalTo: hTPLabel5.bottomAnchor, constant: 30).isActive = true
+        hTPLabel6.topAnchor.constraint(equalTo: howToUseIV2.bottomAnchor, constant: 20).isActive = true
         hTPLabel6.leadingAnchor.constraint(equalTo: contentsView.leadingAnchor, constant: 10).isActive = true
         hTPLabel6.trailingAnchor.constraint(equalTo: contentsView.trailingAnchor, constant: -10).isActive = true
+        
+        
+        hTPLabel7.text = "2　対人対戦"
+        hTPLabel7.font = hTPLabel7.font.withSize(26)
+//        hTPLabel4.adjustsFontSizeToFitWidth = true
+//        hTPLabel4.minimumScaleFactor = 0.5
+        hTPLabel7.tintColor = UIColor.black
+        contentsView.addSubview(hTPLabel7)
+        hTPLabel7.translatesAutoresizingMaskIntoConstraints = false
+        hTPLabel7.centerXAnchor.constraint(equalTo: contentsView.centerXAnchor).isActive = true
+        hTPLabel7.topAnchor.constraint(equalTo: hTPLabel6.bottomAnchor, constant: 30).isActive = true
+        hTPLabel7.leadingAnchor.constraint(equalTo: contentsView.leadingAnchor, constant: 10).isActive = true
+        hTPLabel7.trailingAnchor.constraint(equalTo: contentsView.trailingAnchor, constant: -10).isActive = true
         
         
         howToUseIV3.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 186/255, alpha: 1.0)
@@ -206,39 +219,27 @@ class HowToUseViewController: UIViewController {
         self.contentsView.addSubview(howToUseIV3)
         howToUseIV3.translatesAutoresizingMaskIntoConstraints = false
         howToUseIV3.centerXAnchor.constraint(equalTo: contentsView.centerXAnchor).isActive = true
-        howToUseIV3.topAnchor.constraint(equalTo: hTPLabel6.bottomAnchor, constant: 0).isActive = true
+        howToUseIV3.topAnchor.constraint(equalTo: hTPLabel7.bottomAnchor, constant: 0).isActive = true
         howToUseIV3.leadingAnchor.constraint(equalTo: contentsView.leadingAnchor, constant: 10).isActive = true
         howToUseIV3.trailingAnchor.constraint(equalTo: contentsView.trailingAnchor, constant: -10).isActive = true
         
         
-        hTPLabel7.text = "オンライン対戦には対応していません。\n\n対人対戦は2人で遊ぶモードです。\nVer1とVer2があります。\n\n　Ver1は答えの数字を相手より先に当てるゲームです。上の画面は対人対戦の画面です。左側は1P、右側は2Pが入力した数字が表示されます。入力した数字はお互いが見ることができます。\n　Ver2はお互いが最初に入力した数字を当てるゲームです。1Pは2Pが入力した数字、2Pは1Pが入力した数字を当てます。"
-        hTPLabel7.numberOfLines = 0
-        hTPLabel7.font = hTPLabel7.font.withSize(19)
-        hTPLabel7.tintColor = UIColor.black
-        contentsView.addSubview(hTPLabel7)
-        hTPLabel7.translatesAutoresizingMaskIntoConstraints = false
-        hTPLabel7.centerXAnchor.constraint(equalTo: contentsView.centerXAnchor).isActive = true
-        hTPLabel7.topAnchor.constraint(equalTo: howToUseIV3.bottomAnchor, constant: 20).isActive = true
-        hTPLabel7.leadingAnchor.constraint(equalTo: contentsView.leadingAnchor, constant: 10).isActive = true
-        hTPLabel7.trailingAnchor.constraint(equalTo: contentsView.trailingAnchor, constant: -10).isActive = true
-        
-        
-        hTPLabel8.text = "４　タイムアタック"
-        hTPLabel8.font = hTPLabel8.font.withSize(26)
-//        hTPLabel4.adjustsFontSizeToFitWidth = true
-//        hTPLabel4.minimumScaleFactor = 0.5
+        hTPLabel8.text = "上の画面は対人対戦の画面です。\nオンライン対戦には対応していません。\n\n対人対戦は2人で遊ぶモードです。\nVer1とVer2があります。\n\n　Ver1は答えの数字を相手より先に当てるゲームです。画面の左側は1P、右側は2Pが入力した数字が表示されます。入力した数字はお互いが見ることができます。\n　Ver2はお互いが最初に入力した数字を当てるゲームです。1Pは2Pが入力した数字、2Pは1Pが入力した数字を当てます。"
+        hTPLabel8.numberOfLines = 0
+        hTPLabel8.font = hTPLabel8.font.withSize(19)
         hTPLabel8.tintColor = UIColor.black
         contentsView.addSubview(hTPLabel8)
         hTPLabel8.translatesAutoresizingMaskIntoConstraints = false
         hTPLabel8.centerXAnchor.constraint(equalTo: contentsView.centerXAnchor).isActive = true
-        hTPLabel8.topAnchor.constraint(equalTo: hTPLabel7.bottomAnchor, constant: 30).isActive = true
+        hTPLabel8.topAnchor.constraint(equalTo: howToUseIV3.bottomAnchor, constant: 20).isActive = true
         hTPLabel8.leadingAnchor.constraint(equalTo: contentsView.leadingAnchor, constant: 10).isActive = true
         hTPLabel8.trailingAnchor.constraint(equalTo: contentsView.trailingAnchor, constant: -10).isActive = true
         
         
-        hTPLabel9.text = "ひたすら数字を入力して答えを当てましょう！タイムアタックでは答えの数字を当てるまで、何回でも数字を入力することができます。"
-        hTPLabel9.numberOfLines = 0
-        hTPLabel9.font = hTPLabel8.font.withSize(19)
+        hTPLabel9.text = "3　タイムアタック"
+        hTPLabel9.font = hTPLabel9.font.withSize(26)
+//        hTPLabel4.adjustsFontSizeToFitWidth = true
+//        hTPLabel4.minimumScaleFactor = 0.5
         hTPLabel9.tintColor = UIColor.black
         contentsView.addSubview(hTPLabel9)
         hTPLabel9.translatesAutoresizingMaskIntoConstraints = false
@@ -246,6 +247,18 @@ class HowToUseViewController: UIViewController {
         hTPLabel9.topAnchor.constraint(equalTo: hTPLabel8.bottomAnchor, constant: 30).isActive = true
         hTPLabel9.leadingAnchor.constraint(equalTo: contentsView.leadingAnchor, constant: 10).isActive = true
         hTPLabel9.trailingAnchor.constraint(equalTo: contentsView.trailingAnchor, constant: -10).isActive = true
+        
+        
+        hTPLabel10.text = "ひたすら数字を入力して答えを当てましょう！タイムアタックでは答えの数字を当てるまで、何回でも数字を入力することができます。"
+        hTPLabel10.numberOfLines = 0
+        hTPLabel10.font = hTPLabel9.font.withSize(19)
+        hTPLabel10.tintColor = UIColor.black
+        contentsView.addSubview(hTPLabel10)
+        hTPLabel10.translatesAutoresizingMaskIntoConstraints = false
+        hTPLabel10.centerXAnchor.constraint(equalTo: contentsView.centerXAnchor).isActive = true
+        hTPLabel10.topAnchor.constraint(equalTo: hTPLabel9.bottomAnchor, constant: 30).isActive = true
+        hTPLabel10.leadingAnchor.constraint(equalTo: contentsView.leadingAnchor, constant: 10).isActive = true
+        hTPLabel10.trailingAnchor.constraint(equalTo: contentsView.trailingAnchor, constant: -10).isActive = true
     }
     
     @objc func buttonTapped(_ sender : Any) {

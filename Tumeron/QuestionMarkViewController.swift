@@ -18,9 +18,10 @@ class QuestionMarkViewController: UIViewController {
     
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
+    /*
     var playerController = AVPlayerViewController()
     var player = AVPlayer()
-    
+    */
     
     var helpMenuLabel: UILabel = UILabel()
     var howToPlayButton: UIButton = UIButton()
@@ -41,7 +42,7 @@ class QuestionMarkViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        /*
         /// Audio sessionを動画再生向けのものに設定し、activeにします
         let audioSession = AVAudioSession.sharedInstance()
         do {
@@ -54,7 +55,7 @@ class QuestionMarkViewController: UIViewController {
         } catch {
             
         }
-        
+        */
     }
     
     override func viewWillLayoutSubviews() {
@@ -169,6 +170,7 @@ class QuestionMarkViewController: UIViewController {
         }
     }
     
+    /*
     /// 動画プレイヤーにアイテムをセットして更新
     private func playMovie(fileName: String, fileExtension: String) {
         guard let url = Bundle.main.url(forResource: fileName, withExtension: fileExtension) else {
@@ -188,4 +190,5 @@ class QuestionMarkViewController: UIViewController {
             self.player.play()
         }
     }
+     */
 }

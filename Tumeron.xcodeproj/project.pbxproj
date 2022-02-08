@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		8AB637FB5762AA8A8561E2FB /* Pods_Tumeron.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58FD491F167D761E092F0AE2 /* Pods_Tumeron.framework */; };
 		8D03C764262EC573000A9470 /* TimeAttackPopOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D03C763262EC573000A9470 /* TimeAttackPopOverViewController.swift */; };
-		8D0CB9FD27685AD200F55401 /* hit-explanation.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8D0CB9FC27685AD200F55401 /* hit-explanation.mp4 */; };
 		8D2EA52F262C4DF100A9A665 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2EA52E262C4DF100A9A665 /* AppDelegate.swift */; };
 		8D2EA531262C4DF100A9A665 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2EA530262C4DF100A9A665 /* SceneDelegate.swift */; };
 		8D2EA533262C4DF100A9A665 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2EA532262C4DF100A9A665 /* ViewController.swift */; };
@@ -39,7 +38,6 @@
 		58FD491F167D761E092F0AE2 /* Pods_Tumeron.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tumeron.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CA14A9DF5E5ECF22113ACB7 /* Pods-Tumeron.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tumeron.release.xcconfig"; path = "Target Support Files/Pods-Tumeron/Pods-Tumeron.release.xcconfig"; sourceTree = "<group>"; };
 		8D03C763262EC573000A9470 /* TimeAttackPopOverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeAttackPopOverViewController.swift; sourceTree = "<group>"; };
-		8D0CB9FC27685AD200F55401 /* hit-explanation.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "hit-explanation.mp4"; sourceTree = "<group>"; };
 		8D2EA52B262C4DF100A9A665 /* Tumeron.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tumeron.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D2EA52E262C4DF100A9A665 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8D2EA530262C4DF100A9A665 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -139,7 +137,6 @@
 				8D5E769B275607E30001F5DF /* hit1.mp3 */,
 				8D2EA539262C4DF200A9A665 /* LaunchScreen.storyboard */,
 				8D2EA53C262C4DF200A9A665 /* Info.plist */,
-				8D0CB9FC27685AD200F55401 /* hit-explanation.mp4 */,
 				8DAB2E4B26BA148A00E204EE /* tumeron-title.mp4 */,
 			);
 			path = Tumeron;
@@ -211,7 +208,6 @@
 				8D2EA538262C4DF200A9A665 /* Assets.xcassets in Resources */,
 				8DAB2E4C26BA148A00E204EE /* tumeron-title.mp4 in Resources */,
 				8D5E76A1275608880001F5DF /* clear.mp3 in Resources */,
-				8D0CB9FD27685AD200F55401 /* hit-explanation.mp4 in Resources */,
 				8D2EA536262C4DF100A9A665 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
