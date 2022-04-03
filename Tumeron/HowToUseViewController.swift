@@ -34,7 +34,7 @@ class HowToUseViewController: UIViewController {
     
     var backToMenuButton: UIButton = UIButton()
     
-    
+    var num: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -82,7 +82,7 @@ class HowToUseViewController: UIViewController {
         contentsView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor, constant: 0).isActive = true
         contentsView.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor, constant: 0).isActive = true
         contentsView.widthAnchor.constraint(equalTo: outView.widthAnchor).isActive = true
-        contentsView.heightAnchor.constraint(equalToConstant: 3450).isActive = true
+        contentsView.heightAnchor.constraint(equalToConstant: 3600).isActive = true
         
          
         scrollView.flashScrollIndicators()
@@ -98,7 +98,6 @@ class HowToUseViewController: UIViewController {
         backToMenuButton.translatesAutoresizingMaskIntoConstraints = false
         backToMenuButton.centerXAnchor.constraint(equalTo: contentsView.centerXAnchor).isActive = true
         backToMenuButton.bottomAnchor.constraint(equalTo: contentsView.bottomAnchor, constant: 0).isActive = true
-//        backToMenuButton.leadingAnchor.constraint(equalTo: contentsView.leadingAnchor, constant: contentsView.bounds.width / 2).isActive = true
         backToMenuButton.widthAnchor.constraint(equalToConstant: self.view.frame.width / 4).isActive = true
         backToMenuButton.heightAnchor.constraint(equalToConstant: self.view.frame.height / 17).isActive = true
         backToMenuButton.addTarget(self, action: #selector(buttonTapped(_:)), for: UIControl.Event.touchUpInside)
@@ -188,7 +187,8 @@ class HowToUseViewController: UIViewController {
         howToUseIV2.trailingAnchor.constraint(equalTo: contentsView.trailingAnchor, constant: -10).isActive = true
         
         
-        hTPLabel6.text = "上の画面は詰めロンの、ヒントエリアとイラストエリアの画面です。\n\n右上のライフは数字を入力できる回数を表します。\n\n　ヒントの見方を説明します。\n　=の左側の数と答えを比較した結果が=の右側に出ています。\n　上の画面での答えは6870です。それを踏まえて、1行目の1765と答えの6870を比較すると、7と6が共通して使われていることがわかると思います。しかし使われている場所までは一致していません。同じ数字が使われているけど場所が異なるとき、Bの左側にそのような数字の個数が表示されます。\n　3行目の2857と答えの6870を比較すると、8と7が共通して使われていて、8は使われている場所も同じです（ヒントでも答えの数字内でも左から２番目にありますね！）。Hの左側にはそのような数字の個数が表示されます。\n\n　詰めロンでは自分が入力した数字もヒントに追加されるようになっています。答えがわからないときは入力してみて、改めて答えを考えてみましょう！"
+        hTPLabel6.text = "上の画面は詰めロンのプレイ画面です。左がヒントエリア、右がイラストエリアになっています。\n\n　まず、初めに右上の数字は、あと何回チャレンジできるかの回数を表しています。これが0になると負けです。\n\n　次に、ヒントの見方を説明します。そもそも、詰めロンはランダムで設定された4桁の数字をできるだけ少ないヒントで探り出すゲームです。\n\n　ヒントの見方は以下の通りです。\n　=の右側に、答えとの比較した結果が出ています。例えば、今回、答えは『6870』です。仮に1回目、『1765』(1ヒント)と打ち込むとします。答えと比較すると、7と6が共通して使われています。しかしそれぞれ位置が違います。この場合、Bの左側にその個数が表示されます。今回の場合は2個あるので『2B』です。\n※ちなみに、同じ数字が別の位置にあることはありません！\n\n　次に『2857』(2ヒント)と答えるとしましょう。答えと比べると、8と7が共通して使われていて、かつ8は使われている場所も同じです。Hの左側には、8のような数字の数が表示されます。この場合、1個なので『1H』です。\n\n　詰めロンでは、チャレンジする度に『H』と『B』を用いてヒントが増えていきます。そのヒントをできるだけ少なく抑えて、答えを導いていきましょう！"
+        
         hTPLabel6.numberOfLines = 0
         hTPLabel6.font = hTPLabel6.font.withSize(19)
         hTPLabel6.tintColor = UIColor.black
@@ -262,8 +262,11 @@ class HowToUseViewController: UIViewController {
     }
     
     @objc func buttonTapped(_ sender : Any) {
-        
-        dismiss(animated: true, completion: nil)
+        if num == 0{
+            dismiss(animated: true, completion: nil)
+        }else if num == 1{
+            performSegue(withIdentifier: "segueToVCFromHTUVC", sender: nil)
+        }
     }
     
     

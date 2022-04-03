@@ -29,12 +29,6 @@ class ViewController: UIViewController{
         if segue.identifier == "SegueToTumeron"{
             let TumeronLv1ViewController = segue.destination as! TumeronLv1ViewController
             TumeronLv1ViewController.heartCounter = self.heart
-        }else if segue.identifier == "segueToHistoryViewFromVC"{
-            let TimeAttackHistoryViewController = segue.destination as! TimeAttackHistoryViewController
-            let shownScore: [String] = UserDefaults.standard.array(forKey: "score") as? [String] ?? []
-            TimeAttackHistoryViewController.timeAttackHistoryArray = shownScore
-            let viewJudgeNum = 1
-            TimeAttackHistoryViewController.viewNumber = viewJudgeNum
         }
     }
     
@@ -48,7 +42,7 @@ class ViewController: UIViewController{
         super.viewDidLoad()
         
         appDelegate.audioPlayer.play()
-        UserDefaults.standard.set("", forKey: "score")
+//        UserDefaults.standard.set("", forKey: "score")
         
         let path = Bundle.main.path(forResource: "tumeron-title", ofType: "mp4")!
         let player = AVPlayer(url: URL(fileURLWithPath: path))
@@ -74,7 +68,6 @@ class ViewController: UIViewController{
         let screenHeight:CGFloat = self.view.frame.height
         
         let rgba3 = UIColor(red: 28/255, green: 110/255, blue: 26/255, alpha: 1.0) // ボタン背景色設定
-        timeAttackSelectButton = type(of: timeAttackSelectButton).init(frame: CGRect(x:0, y:0, width: 0, height: 0 ))
         timeAttackSelectButton.setImage(UIImage(named: "hit-menu3"), for: .normal)
         timeAttackSelectButton.backgroundColor = rgba3 // 背景色
         timeAttackSelectButton.layer.borderWidth = 0.1 // 枠線の幅
@@ -91,8 +84,8 @@ class ViewController: UIViewController{
         timeAttackSelectButton.tag = 2
         timeAttackSelectButton.addTarget(self, action: #selector(buttonTapped(_:)), for: UIControl.Event.touchUpInside)
         
+        
         let rgba2 = UIColor(red: 214/255, green: 25/255, blue: 25/255, alpha: 1.0) // ボタン背景色設定
-        battleSelectButton = type(of: battleSelectButton).init(frame: CGRect(x:0, y:0, width: 0, height: 0 ))
         battleSelectButton.setImage(UIImage(named: "hit-menu2"), for: .normal)
         battleSelectButton.backgroundColor = rgba2 // 背景色
         battleSelectButton.layer.borderWidth = 0.1 // 枠線の幅
@@ -109,8 +102,8 @@ class ViewController: UIViewController{
         battleSelectButton.tag = 1
         battleSelectButton.addTarget(self, action: #selector(buttonTapped(_:)), for: UIControl.Event.touchUpInside)
         
+        
         let rgba1 = UIColor(red: 43/255, green: 40/255, blue: 204/255, alpha: 1.0) // ボタン背景色設定
-        tumeronSelectButton = type(of: tumeronSelectButton).init(frame: CGRect(x:0, y:0, width: 0, height: 0 ))
         tumeronSelectButton.setImage(UIImage(named: "hit-menu1"), for: .normal)
         tumeronSelectButton.backgroundColor = rgba1 // 背景色
         tumeronSelectButton.layer.borderWidth = 0.1 // 枠線の幅
@@ -145,8 +138,6 @@ class ViewController: UIViewController{
         questionMarkButton.addTarget(self, action: #selector(buttonTapped(_:)), for: UIControl.Event.touchUpInside)
         
         
-        
-        
         view.addSubview(tumeronView)
         tumeronView.center = view.center
         tumeronView.isHidden = true
@@ -170,9 +161,9 @@ class ViewController: UIViewController{
         closeBattleSelectView.tintColor = UIColor.white
         closeBattleSelectView.layer.cornerRadius = 15
         
-        
-        
     }
+    
+    
     
     @objc func buttonTapped(_ sender : Any) {
         

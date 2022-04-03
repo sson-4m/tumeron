@@ -19,9 +19,9 @@ class QuestionMarkViewController: UIViewController {
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
     /*
-    var playerController = AVPlayerViewController()
-    var player = AVPlayer()
-    */
+     var playerController = AVPlayerViewController()
+     var player = AVPlayer()
+     */
     
     var helpMenuLabel: UILabel = UILabel()
     var howToPlayButton: UIButton = UIButton()
@@ -33,8 +33,6 @@ class QuestionMarkViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "segueToHistoryViewFromVC"{
             let TimeAttackHistoryViewController = segue.destination as! TimeAttackHistoryViewController
-            let shownScore: [String] = UserDefaults.standard.array(forKey: "score") as? [String] ?? []
-            TimeAttackHistoryViewController.timeAttackHistoryArray = shownScore
             let viewJudgeNum = 1
             TimeAttackHistoryViewController.viewNumber = viewJudgeNum
         }
@@ -43,38 +41,23 @@ class QuestionMarkViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         /*
-        /// Audio sessionを動画再生向けのものに設定し、activeにします
-        let audioSession = AVAudioSession.sharedInstance()
-        do {
-            try audioSession.setCategory(.playback, mode: .moviePlayback)
-        } catch {
-            
-        }
-        do {
-            try audioSession.setActive(true)
-        } catch {
-            
-        }
-        */
+         /// Audio sessionを動画再生向けのものに設定し、activeにします
+         let audioSession = AVAudioSession.sharedInstance()
+         do {
+         try audioSession.setCategory(.playback, mode: .moviePlayback)
+         } catch {
+         
+         }
+         do {
+         try audioSession.setActive(true)
+         } catch {
+         
+         }
+         */
     }
     
     override func viewWillLayoutSubviews() {
-        /*
-         timeAttackHistoryButton.backgroundColor = UIColor(red: 255/255, green: 88/255, blue: 56/255, alpha: 1.0)
-         timeAttackHistoryButton.setTitleColor(UIColor(red: 255/255, green: 255/255, blue: 186/255, alpha: 1.0), for: .normal)
-         timeAttackHistoryButton.setTitle("タイムアタックの記録", for: .normal)
-         timeAttackHistoryButton.titleLabel?.font = UIFont.systemFont(ofSize: 30)
-         timeAttackHistoryButton.titleLabel?.adjustsFontSizeToFitWidth = true
-         timeAttackHistoryButton.layer.cornerRadius = 15
-         self.view.addSubview(timeAttackHistoryButton)
-         timeAttackHistoryButton.translatesAutoresizingMaskIntoConstraints = false
-         timeAttackHistoryButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-         timeAttackHistoryButton.topAnchor.constraint(equalTo: homePageButton.bottomAnchor, constant: 40).isActive = true
-         timeAttackHistoryButton.widthAnchor.constraint(equalTo: homePageButton.widthAnchor).isActive = true
-         timeAttackHistoryButton.heightAnchor.constraint(equalTo: homePageButton.heightAnchor).isActive = true
-         timeAttackHistoryButton.tag = 0
-         timeAttackHistoryButton.addTarget(self, action: #selector(buttonTapped(_:)), for: UIControl.Event.touchUpInside)
-         */
+        
         
         
         helpMenuLabel.textColor = UIColor.brown
@@ -121,6 +104,22 @@ class QuestionMarkViewController: UIViewController {
         homePageButton.tag = 2
         homePageButton.addTarget(self, action: #selector(buttonTapped(_:)), for: UIControl.Event.touchUpInside)
         
+        /*
+        timeAttackHistoryButton.backgroundColor = UIColor(red: 255/255, green: 88/255, blue: 56/255, alpha: 1.0)
+        timeAttackHistoryButton.setTitleColor(UIColor(red: 255/255, green: 255/255, blue: 186/255, alpha: 1.0), for: .normal)
+        timeAttackHistoryButton.setTitle("タイムアタックの記録", for: .normal)
+        timeAttackHistoryButton.titleLabel?.font = UIFont.systemFont(ofSize: 25)
+        timeAttackHistoryButton.titleLabel?.adjustsFontSizeToFitWidth = true
+        timeAttackHistoryButton.layer.cornerRadius = 15
+        self.view.addSubview(timeAttackHistoryButton)
+        timeAttackHistoryButton.translatesAutoresizingMaskIntoConstraints = false
+        timeAttackHistoryButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        timeAttackHistoryButton.topAnchor.constraint(equalTo: homePageButton.bottomAnchor, constant: self.view.bounds.width / 7).isActive = true
+        timeAttackHistoryButton.widthAnchor.constraint(equalTo: homePageButton.widthAnchor).isActive = true
+        timeAttackHistoryButton.heightAnchor.constraint(equalTo: homePageButton.heightAnchor).isActive = true
+        timeAttackHistoryButton.tag = 0
+        timeAttackHistoryButton.addTarget(self, action: #selector(buttonTapped(_:)), for: UIControl.Event.touchUpInside)
+        */
         
         backToMenuButton.setTitleColor(UIColor.brown, for: .normal)
         backToMenuButton.setTitle("戻る", for: .normal)
@@ -144,9 +143,6 @@ class QuestionMarkViewController: UIViewController {
             appDelegate.audioPlayer.currentTime = 0
             performSegue(withIdentifier: "segueToHistoryViewFromVC", sender: nil)
         case 1:
-            
-            //playMovie(fileName: "hit-explanation", fileExtension: "mp4")
-            
             performSegue(withIdentifier: "segueToHowToUseViewController", sender: nil)
         case 2:
             /*
@@ -171,24 +167,24 @@ class QuestionMarkViewController: UIViewController {
     }
     
     /*
-    /// 動画プレイヤーにアイテムをセットして更新
-    private func playMovie(fileName: String, fileExtension: String) {
-        guard let url = Bundle.main.url(forResource: fileName, withExtension: fileExtension) else {
-            print("Url is nil")
-            return
-        }
-        
-        // AVPlayerにアイテムをセット
-        let item = AVPlayerItem(url: url)
-        player.replaceCurrentItem(with: item)
-        
-        // 動画プレイヤーにplayerをセット
-        playerController.player = player
-        
-        // 動画プレイヤーを表示して再生
-        self.present(playerController, animated: true) {
-            self.player.play()
-        }
-    }
+     /// 動画プレイヤーにアイテムをセットして更新
+     private func playMovie(fileName: String, fileExtension: String) {
+     guard let url = Bundle.main.url(forResource: fileName, withExtension: fileExtension) else {
+     print("Url is nil")
+     return
+     }
+     
+     // AVPlayerにアイテムをセット
+     let item = AVPlayerItem(url: url)
+     player.replaceCurrentItem(with: item)
+     
+     // 動画プレイヤーにplayerをセット
+     playerController.player = player
+     
+     // 動画プレイヤーを表示して再生
+     self.present(playerController, animated: true) {
+     self.player.play()
+     }
+     }
      */
 }

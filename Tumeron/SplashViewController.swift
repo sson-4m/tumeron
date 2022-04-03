@@ -21,6 +21,14 @@ class SplashViewController: UIViewController {
     
     
     var logoImageView: UIImageView!
+    /*
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "segueToHTUfromSplashVC"{
+            let HowToUseViewController = segue.destination as! HowToUseViewController
+            HowToUseViewController.num = 1
+        }
+    }
+    */
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,7 +46,11 @@ class SplashViewController: UIViewController {
         
     }
     
+    
     override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        
         //少し縮小するアニメーション
         UIView.animate(withDuration: 0.3,
                        delay: 1.0,
@@ -60,10 +72,14 @@ class SplashViewController: UIViewController {
             self.logoImageView.removeFromSuperview()
             
         })
-        performSegue(withIdentifier: "segueToMainViewController", sender: nil)
-         
+        
+        segueToMVC()
+        
     }
     
+    func segueToMVC(){
+        performSegue(withIdentifier: "segueToMainViewController", sender: nil)
+    }
     
     /*
      // MARK: - Navigation

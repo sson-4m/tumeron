@@ -39,6 +39,10 @@ class TimeAttackViewController: UIViewController{
     var second: Int = 0
     var msec: Int = 0
     
+    
+    var currentTime = 0.0
+    
+    
     weak var timer: Timer! //時間
     var startTime = Date()
     var sMinute: String = "" //時間が代入される変数の宣言
@@ -76,9 +80,7 @@ class TimeAttackViewController: UIViewController{
         
         appDelegate.audioPlayerOfGame.play()
         
-        timerMinute.isHidden = true
-        timerSecond.isHidden = true
-        timerMSec.isHidden = true
+       
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -87,10 +89,20 @@ class TimeAttackViewController: UIViewController{
             TimeAttackPopOverViewController.text1 = passedTime
             TimeAttackPopOverViewController.text2 = String(rowCounter)
             TimeAttackPopOverViewController.resultArray = resultspassedArray
-            var getScores: [String] = UserDefaults.standard.array(forKey: "score") as? [String] ?? []
-            let savedInformation = "タイム: " + passedTime + "  試行回数:" + String(rowCounter) + "回"
-            getScores.append(savedInformation)
+            var getScores: [String] = UserDefaults.standard.stringArray(forKey: "score") ?? []
+            let savedInformation = [String(sMinute) + "分" + String(sSecond) + "秒" + String(sMsec)]
+            getScores.append(contentsOf: savedInformation)
             UserDefaults.standard.set(getScores, forKey: "score")
+            
+            
+            DateFormatter().dateFormat = DateFormatter.dateFormat(fromTemplate: "yMMMd", options: 0, locale: Locale(identifier: "ja_JP"))
+            print(DateFormatter().string(from: Date()))
+            var getTime: [String] = UserDefaults.standard.stringArray(forKey: "time") ?? []
+            let savedTime = [DateFormatter().string(from: Date())]
+            print(savedTime)
+            getTime.append(contentsOf: savedTime)
+            UserDefaults.standard.set(getTime, forKey: "score")
+             
         }
     }
     
@@ -273,7 +285,7 @@ class TimeAttackViewController: UIViewController{
     
     @objc func timerCounter() {
         // タイマー開始からのインターバル時間
-        let currentTime = Date().timeIntervalSince(startTime)
+       currentTime = Date().timeIntervalSince(startTime)
         // fmod() 余りを計算
         minute = (Int)(fmod((currentTime/60), 60))
         // currentTime/60 の余り
@@ -288,6 +300,8 @@ class TimeAttackViewController: UIViewController{
         timerMinute.text = sMinute + ":"
         timerSecond.text = sSecond
         timerMSec.text = "." + sMsec
+        
+        
     }
     
     func checkNumbers(inputNum: [Int], trueNum: [Int]){

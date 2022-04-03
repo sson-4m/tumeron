@@ -7,6 +7,5 @@ target 'Tumeron' do
 
   # Pods for Tumeron
 
-  pod 'lottie-ios'
 
 end
