@@ -40,6 +40,8 @@ class QuestionMarkViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.view.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 186/255, alpha: 1.0)
         /*
          /// Audio sessionを動画再生向けのものに設定し、activeにします
          let audioSession = AVAudioSession.sharedInstance()
@@ -57,8 +59,6 @@ class QuestionMarkViewController: UIViewController {
     }
     
     override func viewWillLayoutSubviews() {
-        
-        
         
         helpMenuLabel.textColor = UIColor.brown
         helpMenuLabel.text = "ヘルプメニュー"
@@ -121,18 +121,25 @@ class QuestionMarkViewController: UIViewController {
         timeAttackHistoryButton.addTarget(self, action: #selector(buttonTapped(_:)), for: UIControl.Event.touchUpInside)
         */
         
-        backToMenuButton.setTitleColor(UIColor.brown, for: .normal)
-        backToMenuButton.setTitle("戻る", for: .normal)
-        backToMenuButton.titleLabel?.font = UIFont.systemFont(ofSize: 30)
-        backToMenuButton.titleLabel?.adjustsFontSizeToFitWidth = true
+        
         self.view.addSubview(backToMenuButton)
         backToMenuButton.translatesAutoresizingMaskIntoConstraints = false
-        backToMenuButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        backToMenuButton.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: -self.view.safeAreaInsets.bottom - 20).isActive = true
-        
+        backToMenuButton.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -20).isActive = true
+        backToMenuButton.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: -self.view.safeAreaInsets.bottom).isActive = true
+        backToMenuButton.widthAnchor.constraint(equalToConstant: self.view.frame.width / 6).isActive = true
+        backToMenuButton.heightAnchor.constraint(equalToConstant: self.view.frame.width / 6).isActive = true
         backToMenuButton.tag = 3
         backToMenuButton.addTarget(self, action: #selector(buttonTapped(_:)), for: UIControl.Event.touchUpInside)
-        
+        //https://icon-rainbow.com/ターン・バックするの矢印アイコン素材-2/
+        backToMenuButton.backgroundColor = UIColor(red: 240/255, green: 240/255, blue: 240/255, alpha: 1.0)
+        backToMenuButton.layer.borderWidth = 1.0
+        backToMenuButton.layer.borderColor = CGColor(red: 80/255, green: 80/255, blue: 80/255, alpha: 1.0)
+        backToMenuButton.setImage(UIImage(named: "returnImage1"), for: .normal)
+        backToMenuButton.imageView?.contentMode = .scaleAspectFill
+        backToMenuButton.contentHorizontalAlignment = .fill
+        backToMenuButton.contentVerticalAlignment = .fill
+        backToMenuButton.imageEdgeInsets = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10);
+        backToMenuButton.layer.cornerRadius = backToMenuButton.bounds.width / 2
         
     }
     
